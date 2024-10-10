@@ -44,9 +44,19 @@ body {
 .stayconnected-section .background{
     background-color:  #2B6A4A;
     border-radius: 20px 10px;
-    height: 500px;  
+    height: 350px;  
     padding: 25px;
     text-align: center;
+    position: relative;
+}
+.stayconnected-section .background .leaf-section {
+    position:absolute;
+    top: 0%;
+    right:0%
+}
+.stayconnected-section .background .leaf-section img{
+    opacity: 0;
+    height: 200px; 
 }
 .stayconnected-section .background .heading{
     font-size: 55px;
@@ -54,6 +64,11 @@ body {
 .stayconnected-section .background .paragraph{
     font-size: 18px;
     margin-bottom: 10px;
+}
+.stayconnected-section .background .orange-section {
+    position:absolute;
+    bottom: 0%;
+    left:0%
 }
 .stayconnected-section .background .orange-section img{
     opacity: 0.2;
