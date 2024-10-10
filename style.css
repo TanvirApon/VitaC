@@ -28,12 +28,10 @@ body {
 .question-section .accordion .accordion-header .accordion-button{
     font-size: 20px;
     font-weight: bold;
-
 }
 .question-section .accordion .accordion-collapse .accordion-body{
     font-size: 18px;
-    color: #888c89;
-    
+    color: #888c89; 
 }
 /* question-section ends here */
 
@@ -41,25 +39,25 @@ body {
 .stayconnected-section{
     text-align: center;
     color: white;
-
+    margin-bottom: 15px;
 }
 .stayconnected-section .background{
     background-color:  #2B6A4A;
     border-radius: 20px 10px;
-    height: 270px;  
+    height: 500px;  
     padding: 25px;
+    text-align: center;
 }
-
 .stayconnected-section .background .heading{
-    font-size: 35px;
+    font-size: 55px;
 }
 .stayconnected-section .background .paragraph{
     font-size: 18px;
     margin-bottom: 10px;
 }
-
-.stayconnected-section .background .from-section form .form-input{
-    width: 50%;
-
+.stayconnected-section .background .orange-section img{
+    opacity: 0.2;
+    height: 200px; 
 }
+
 /* stayconnected-section ends here */
