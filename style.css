@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    font-family: 'LucidaGrande';
+    src: url('fonts/LucidaGrandeBold.ttf');
+}            
+body {
+    margin: 0;
+}
+
+/* images-card starts here */
+.image-background{
+    background-color: #E8EDEA;
+    margin-bottom: 20px;
+}
+/* images-card ends here */
+
+/* question-section starts here */
+.question-section{
+    width: 650px;
+    margin-bottom: 50px; 
+}
+.question-section .heading{
+    text-align: center; 
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.question-section .accordion .accordion-header .accordion-button{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.question-section .accordion .accordion-collapse .accordion-body{
+    font-size: 18px;
+    color: #888c89;
+    
+}
+/* question-section ends here */
+
+/* stayconnected-section starts from here */
+.stayconnected-section{
+    text-align: center;
+    color: white;
+
+}
+.stayconnected-section .background{
+    background-color:  #2B6A4A;
+    border-radius: 20px 10px;
+    height: 270px;  
+    padding: 25px;
+}
+
+.stayconnected-section .background .heading{
+    font-size: 35px;
+}
+.stayconnected-section .background .paragraph{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stayconnected-section .background .from-section form .form-input{
+    width: 50%;
+
+}
+/* stayconnected-section ends here */
