@@ -55,7 +55,6 @@ body {
     right:0%
 }
 .stayconnected-section .background .leaf-section img{
-    opacity: 0;
     height: 200px; 
 }
 .stayconnected-section .background .heading{
@@ -74,5 +73,7 @@ body {
     opacity: 0.2;
     height: 200px; 
 }
-
+.stayconnected-section .background .form-section .form-inside input{
+    width: 50%;
+} 
 /* stayconnected-section ends here */
