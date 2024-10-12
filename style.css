@@ -6,6 +6,16 @@
 body {
     margin: 0;
 }
+.heading{
+    font-size:25px;
+    font-weight: bold;
+}
+ a{
+    text-decoration: none;
+    color: #888c89;
+    font-size: 20px;
+}
+
 
 /* images-card starts here */
 .image-background{
@@ -43,7 +53,7 @@ body {
 }
 .stayconnected-section .background{
     background-color:  #2B6A4A;
-    border-radius: 20px 10px;
+    border-radius: 20px;
     height: 350px;  
     padding: 25px;
     text-align: center;
@@ -73,7 +83,8 @@ body {
     opacity: 0.2;
     height: 200px; 
 }
-.stayconnected-section .background .form-section .form-inside input{
-    width: 50%;
-} 
 /* stayconnected-section ends here */
+
+/* footer starts from here */
+
+/* footer ends here */
