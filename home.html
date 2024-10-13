@@ -90,20 +90,33 @@
         </div>
         <!-- flavour-section ends here -->
         <hr>
-
-        <div class="item-add d-flex justify-content-start">
-           
-                <div class="dropdown">
+        <div class="item-add d-flex justify-content-start">   
+                <div class="dropdown m-3">
                     <select class="form-select w-30 rounded-pill bg-light" aria-label="Default select example">
                         <option selected>100 ML</option>
                         <option value="50">50 ML</option>
                         <option value="150">150 ML</option>
                         <option value="200">200 ML</option>
-                      </select>
-                  </div>
-            <!-- dropdown ends here -->
+                    </select>
+                </div>
+                <!-- dropdown ends here -->
+               <div class="cart-add d-flex justify-content-center m-3">
+                <div class="cart-add-container bg-light rounded-pill d-flex justify-content-center align-items-center">
+                    <button class="btn btn-light border-none" id="decrease">−</button>
+                    <span class="mx-2" id="quantity">1</span>
+                    <button class="btn btn-light border-none" id="increase">+</button>
+                </div>
+                <!-- cart-add-container ends here -->
+               
+               </div>
+               <!-- cart-add ends here -->
+
+               <div class="cart-button m-3 w-25">
+                <button class="bg-success btn-lg  rounded-pill text-white w-50 h-100 border-none">Add to Cart</button>
+             </div>
+             <!-- cart-button ends here -->
         </div>
-        
+        <!-- item-add ends here -->
     </div>
     <!-- cart-information ends here -->
 

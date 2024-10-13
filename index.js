@@ -1,5 +1,8 @@
 console.log("Js File has been added");
 
+
+
+
 function readMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
