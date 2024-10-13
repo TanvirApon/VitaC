@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
@@ -14,13 +15,101 @@
  <!-- navbar starts from here -->
  <!-- navbar ends here -->
 
+  <!-- cart-section starts from here -->
+  <div class="cart-section d-flex justify-content-center">
+    <div class="cart-picture m-3">
 
+    </div>
+    <!-- cart-picture ends here -->
+    <div class="cart-information m-3">      
+        <div class="header">
+            Vitamin C-100ML-Original
+        </div>
+        <!-- header ends here -->
+        <div class="review-rating d-flex">
+            <div class="rating m-3">
+                <span class="fa fa-star checked star"></span>
+                <span class="fa fa-star checked star"></span>
+                <span class="fa fa-star checked star"></span>
+                <span class="fa fa-star checked star"></span> 
+            </div>
+            <!-- rating ends here -->
+            <div class="reviews m-3">
+              288 reviews |   100ml
+            </div>
+            <!-- reviews ends here -->  
+        </div>
+         <!-- review-rating ends here -->
+        <div class="price m-3">
+            $40.99
+        </div>
+        <!-- price ends here -->
+         <hr>
+        <div class="info">
+            Vitamin C, also known as ascorbic acid, is an essential nutrient that supports numerous bodily functions.
+            It is crucial for maintaining healthy skin, blood vessels, bones, and cartilage, primarily due to its role in collagen synthesis.
+            Collagen is a protein that provides structure to the skin and helps repair tissues, making Vitamin C important for wound healing.
+            Additionally, it boosts the immune system by enhancing the activity of white blood cells, enabling the body to fight infections more effectively.
+            Vitamin C also acts as a powerful antioxidant, neutralizing free radicals and protecting cells from oxidative damage.
+            <span id="dots"></span>
+  
+         <span id="more">
+            Another important function of Vitamin C is enhancing iron absorption from plant-based foods, helping prevent anemia.
+            A severe deficiency can lead to scurvy, characterized by fatigue, bleeding gums, and poor wound healing.
+            Found abundantly in citrus fruits like oranges and lemons, Vitamin C is a key component of a healthy diet.
+         </span>
+         <br>
+         <a href="#" class="read" id="read-btn" onclick="readMore()">Read More</a>
+   
+        </div>
+        <!-- info ends here -->
+        <hr>
+        <div class="flavour-section d-flex justify-content-start">
+            <div class="heading m-3">
+                Flavour
+            </div>
+            <div class="image-section d-flex justify-content-around">
+                <div class="orange m-3 border-2">
+                    <a href="">
+                        <img src="Images/image 42.png"  alt="orange">
+                    </a>
+                </div>
+                <div class="berry m-3">
+                    <a href="">
+                        <img src="Images/image 45.png" alt="berry">
+                    </a>
+                </div>
+                <div class="lemon m-3">
+                    <a href="">
+                        <img src="Images/image 44.png" alt="lemon">                        
+                    </a>
+                </div>
+            </div>
+            <!-- image-section ends here -->
 
+        </div>
+        <!-- flavour-section ends here -->
+        <hr>
 
+        <div class="item-add d-flex justify-content-start">
+           
+                <div class="dropdown">
+                    <select class="form-select w-30 rounded-pill bg-light" aria-label="Default select example">
+                        <option selected>100 ML</option>
+                        <option value="50">50 ML</option>
+                        <option value="150">150 ML</option>
+                        <option value="200">200 ML</option>
+                      </select>
+                  </div>
+            <!-- dropdown ends here -->
+        </div>
+        
+    </div>
+    <!-- cart-information ends here -->
 
+  </div>
+  <!-- cart-section ends here -->
 
-
- 
  <!-- images-card starts from here -->
  <div class="images-card image-background ">
     <div class="container d-flex justify-content-center">
@@ -52,7 +141,7 @@
  <!-- question-section starts from here -->
  <div class="question-section container">
         
-        <div class="heading">
+        <div class="header">
             Want to know more ?
         </div>
 

@@ -10,11 +10,71 @@ body {
     font-size:25px;
     font-weight: bold;
 }
- a{
+.header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+a{
     text-decoration: none;
     color: #888c89;
     font-size: 20px;
 }
+.checked {
+    color: orange;
+}
+.star{
+    font-size: 25px;
+}
+/* cart-section starts here */
+.cart-section .cart-information .review-rating .rating{
+    line-height: 3;
+}
+
+.cart-section .cart-information .review-rating .reviews{
+    font-size: 25px;
+}
+.cart-section .cart-information .price{
+    color: #2B6A4A;
+    font-size: 30px;
+    font-weight: bold;
+}
+.cart-section .cart-information .info{
+    font-size: 20px;
+}
+.cart-section .cart-information .info .read {
+    text-decoration: underline;
+    color:#2B6A4A;
+}
+.cart-section .cart-information .info #more{
+    display: none;
+}
+.cart-section .cart-information .flavour-section .image-section .orange a img{
+    height: 75px;
+}
+.cart-section .cart-information .flavour-section .image-section .berry a img{
+    height: 75px;
+}
+.cart-section .cart-information .flavour-section .image-section .lemon a img{
+    height: 75px;
+}
+.cart-section .cart-information .flavour-section .image-section .orange a img:hover{
+    border: 2px solid #2B6A4A;
+    height: 75px;
+}
+.cart-section .cart-information .flavour-section .image-section .berry a img:hover{
+    border: 2px solid #2B6A4A;
+    height: 75px;
+}
+.cart-section .cart-information .flavour-section .image-section .lemon a img:hover{
+    border: 2px solid #2B6A4A;
+    height: 75px;
+}
+
+
+/* cart-section ends here */
+
 
 
 /* images-card starts here */
@@ -28,12 +88,6 @@ body {
 .question-section{
     width: 650px;
     margin-bottom: 50px; 
-}
-.question-section .heading{
-    text-align: center; 
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 10px;
 }
 .question-section .accordion .accordion-header .accordion-button{
     font-size: 20px;
