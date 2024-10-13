@@ -1,6 +1,27 @@
 console.log("Js File has been added");
 
+var increase = document.getElementById("increase");
+var decrease = document.getElementById("decrease");
+var quantity = document.getElementById('quantity');
 
+increase.addEventListener('click',function(){
+ 
+  var currQuan = parseInt(quantity.innerHTML)
+  quantity.innerHTML = currQuan + 1;
+});
+
+
+decrease.addEventListener('click',function(){
+  var currQuan = parseInt(quantity.innerHTML);
+   if(currQuan <=0){
+    currQuan = 0;
+   }
+   else
+   {
+    quantity.innerHTML = currQuan - 1;
+   }
+  
+});
 
 
 function readMore() {

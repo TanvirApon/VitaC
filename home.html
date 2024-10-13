@@ -16,7 +16,7 @@
  <!-- navbar ends here -->
 
   <!-- cart-section starts from here -->
-  <div class="cart-section d-flex justify-content-center">
+  <div class="cart-section d-flex justify-content-center mb-5">
     <div class="cart-picture m-3">
 
     </div>
@@ -90,7 +90,7 @@
         </div>
         <!-- flavour-section ends here -->
         <hr>
-        <div class="item-add d-flex justify-content-start">   
+        <div class="item-add d-flex justify-content-start mb-2">   
                 <div class="dropdown m-3">
                     <select class="form-select w-30 rounded-pill bg-light" aria-label="Default select example">
                         <option selected>100 ML</option>
@@ -103,7 +103,7 @@
                <div class="cart-add d-flex justify-content-center m-3">
                 <div class="cart-add-container bg-light rounded-pill d-flex justify-content-center align-items-center">
                     <button class="btn btn-light border-none" id="decrease">−</button>
-                    <span class="mx-2" id="quantity">1</span>
+                    <span class="mx-2 quantity" id="quantity">1</span>
                     <button class="btn btn-light border-none" id="increase">+</button>
                 </div>
                 <!-- cart-add-container ends here -->
@@ -111,12 +111,23 @@
                </div>
                <!-- cart-add ends here -->
 
-               <div class="cart-button m-3 w-25">
+               <div class="cart-button m-3 w-25 border-none">
                 <button class="bg-success btn-lg  rounded-pill text-white w-50 h-100 border-none">Add to Cart</button>
              </div>
              <!-- cart-button ends here -->
         </div>
         <!-- item-add ends here -->
+     
+        <!-- details-section starts from here -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="shipping-tab" data-toggle="tab" href="#shipping" role="tab" aria-controls="shipping" aria-selected="false">Shipping Details</a>
+            </li>
+        </ul> 
+        <!-- details-section ends here -->
     </div>
     <!-- cart-information ends here -->
 
