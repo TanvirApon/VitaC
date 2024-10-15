@@ -6,6 +6,9 @@
 body {
     margin: 0;
 }
+
+/* for desktop device */
+@media (min-width: 1024px) {
 .heading{
     font-size:25px;
     font-weight: bold;
@@ -28,58 +31,50 @@ a{
     font-size: 25px;
 }
 /* cart-section starts here */
-.cart-section .cart-information .review-rating .rating{
+.cart-section .row .cart-information .review-rating .rating{
     line-height: 3;
 }
 
-.cart-section .cart-information .review-rating .reviews{
+.cart-section .row .cart-information .review-rating .reviews{
     font-size: 25px;
 }
-.cart-section .cart-information .price{
+.cart-section .row .cart-information .price{
     color: #2B6A4A;
     font-size: 30px;
     font-weight: bold;
 }
-.cart-section .cart-information .info{
+.cart-section .row .cart-information .info{
     font-size: 20px;
 }
-.cart-section .cart-information .info .read {
+.cart-section .row .cart-information .info .read {
     text-decoration: underline;
     color:#2B6A4A;
 }
-.cart-section .cart-information .info #more{
+.cart-section .row .cart-information .info #more{
     display: none;
 }
-.cart-section .cart-information .flavour-section .image-section .orange a img{
+.cart-section .row .cart-information .flavour-section .image-section .orange a img{
     height: 75px;
 }
-.cart-section .cart-information .flavour-section .image-section .berry a img{
+.cart-section .row .cart-information .flavour-section .image-section .berry a img{
     height: 75px;
 }
-.cart-section .cart-information .flavour-section .image-section .lemon a img{
+.cart-section .row .cart-information .flavour-section .image-section .lemon a img{
     height: 75px;
 }
-.cart-section .cart-information .flavour-section .image-section .orange a img:hover{
+.cart-section .row .cart-information .flavour-section .image-section .orange a img:hover{
     border: 2px solid #2B6A4A;
     height: 75px;
 }
-.cart-section .cart-information .flavour-section .image-section .berry a img:hover{
+.cart-section .row .cart-information .flavour-section .image-section .berry a img:hover{
     border: 2px solid #2B6A4A;
     height: 75px;
 }
-.cart-section .cart-information .flavour-section .image-section .lemon a img:hover{
+.cart-section .row .cart-information .flavour-section .image-section .lemon a img:hover{
     border: 2px solid #2B6A4A;
     height: 75px;
 }
-.cart-section .cart-information .item-add .cart-button .cart_add{
-    width: 50px;
-    height: 50px;
-}
-
-
 /* cart-section ends here */
-
-
 
 /* images-card starts here */
 .image-background{
@@ -146,3 +141,146 @@ a{
 /* footer starts from here */
 
 /* footer ends here */
+}
+
+
+
+/* for mobile device */
+@media (max-width: 768px) {
+    .heading{
+        font-size:25px;
+        font-weight: bold;
+    }
+    .header{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: #888c89;
+        font-size: 20px;
+    }
+    .checked {
+        color: orange;
+    }
+    .star{
+        font-size: 25px;
+    }
+    /* cart-section starts here */
+    .cart-section .row .cart-information .review-rating .rating{
+        line-height: 3;
+    }
+    
+    .cart-section .row .cart-information .review-rating .reviews{
+        font-size: 25px;
+    }
+    .cart-section .row .cart-information .price{
+        color: #2B6A4A;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .cart-section .row .cart-information .info{
+        font-size: 20px;
+    }
+    .cart-section .row .cart-information .info .read {
+        text-decoration: underline;
+        color:#2B6A4A;
+    }
+    .cart-section .row .cart-information .info #more{
+        display: none;
+    }
+    .cart-section .row .cart-information .flavour-section .image-section .orange a img{
+        height: 75px;
+    }
+    .cart-section .row .cart-information .flavour-section .image-section .berry a img{
+        height: 75px;
+    }
+    .cart-section .row .cart-information .flavour-section .image-section .lemon a img{
+        height: 75px;
+    }
+    .cart-section .row .cart-information .flavour-section .image-section .orange a img:hover{
+        border: 2px solid #2B6A4A;
+        height: 75px;
+    }
+    .cart-section .row .cart-information .flavour-section .image-section .berry a img:hover{
+        border: 2px solid #2B6A4A;
+        height: 75px;
+    }
+    .cart-section .row .cart-information .flavour-section .image-section .lemon a img:hover{
+        border: 2px solid #2B6A4A;
+        height: 75px;
+    }
+    /* cart-section ends here */
+    
+    /* images-card starts here */
+    .image-background{
+        background-color: #E8EDEA;
+        margin-bottom: 20px;
+    }
+    .image-background .image a img{
+        height: 70px;
+    }
+    /* images-card ends here */
+    
+    /* question-section starts here */
+    .question-section{
+        width: 650px;
+        margin-bottom: 50px; 
+    }
+    .question-section .accordion .accordion-header .accordion-button{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .question-section .accordion .accordion-collapse .accordion-body{
+        font-size: 18px;
+        color: #888c89; 
+    }
+    /* question-section ends here */
+    
+    /* stayconnected-section starts from here */
+    .stayconnected-section{
+        text-align: center;
+        color: white;
+        margin-bottom: 15px;
+    }
+    .stayconnected-section .background{
+        background-color:  #2B6A4A;
+        border-radius: 20px;
+        height: 350px;  
+        padding: 25px;
+        text-align: center;
+        position: relative;
+    }
+    .stayconnected-section .background .leaf-section {
+        position:absolute;
+        top: 0%;
+        right:0%
+    }
+    .stayconnected-section .background .leaf-section img{
+        height: 200px; 
+    }
+    .stayconnected-section .background .heading{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .stayconnected-section .background .paragraph{
+        font-size: 20px;
+    }
+    .stayconnected-section .background .orange-section {
+        position:absolute;
+        bottom: 0%;
+        left:0%
+    }
+    .stayconnected-section .background .orange-section img{
+        opacity: 0.2;
+        height: 200px; 
+    }
+    /* stayconnected-section ends here */
+    
+    /* footer starts from here */
+    
+    /* footer ends here */
+
+}
