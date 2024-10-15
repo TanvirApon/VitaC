@@ -11,8 +11,47 @@
 </head>
 <body>
  
- <!-- navbar starts from here -->
- <!-- navbar ends here -->
+ <!-- navbar-section starts from here -->
+  <div class="navbar-section bg-light mb-5">
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/Vector.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="#">NEW LAUNCHES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="#">SALE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="#">BLOG</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+              
+            </form>
+          </div>
+        </div>
+      </nav>
+     <!-- navbar ends here -->
+
+  </div>
+  <!-- navbar-section ends here -->
+
+
 
   <!-- cart-section starts from here -->
   <div class="cart-section d-flex justify-content-center mb-5 container">
@@ -48,13 +87,12 @@
                      
                      <button class=" btn m-2"><i class="material-icons">arrow_forward</i>
                      </button>
-                  
+                 
                  </div>
                  <!-- carousel-inner ends here -->
              
             </div>
             <!-- sub-image ends here -->
-     
          </div>
          <!-- cart-picture ends here -->
          <div class="col-12 col-md-12 col-lg-6 col-xl-6 cart-information">      
@@ -83,7 +121,7 @@
               <hr>
              <div class="info">
                  Vitamin C, also known as ascorbic acid, is an essential nutrient that supports numerous bodily functions.
-                 It is crucial for maintaining healthy skin, blood vessels, bones, and cartilage, primarily due to its role in collagen synthesis.<span id="dots"></span>
+                 It is crucial for maintaining healthy skin, blood vessels, bones, and cartilage, primarily due to its role in collagen synthesis.<span id="dots">...</span>
        
               <span id="more">
                  Collagen is a protein that provides structure to the skin and helps repair tissues, making Vitamin C important for wound healing.
@@ -149,6 +187,19 @@
                   <!-- cart-button ends here -->
              </div>
              <!-- item-add ends here -->
+
+              <!-- Wishlist starts from here -->
+              <div class="wishlist m-3 d-flex justify-content-start">
+                <div class="icon m-1">
+                    <a href="#">
+                        <i id="wishlist-icon" class="material-icons">favorite</i>
+                       </a>
+                </div>
+                <div class="head m-1 fw-bold">
+                    Add to Wishlist
+                </div>
+              </div>
+              <!-- Wishlist ends here -->
           
              <!-- details-section starts from here -->
              <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -169,7 +220,6 @@
   <!-- cart-section ends here -->
 
 
-  
 
  <!-- images-card starts from here -->
  <div class="images-card image-background ">
@@ -201,7 +251,7 @@
 
  <!-- review-section starts from here -->
  <div class="review-section">
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel" data-bs-ride="carousel">
         <!-- The slideshow/carousel -->
          <div class="carousel-inner">
             <div class="carousel-item active">
@@ -340,15 +390,18 @@
                 </div>
             </div>
         </div>
-        
         <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" >
             <span class="carousel-control-prev-icon"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
         </button>
       
+ 
+ 
+    </div>
+
  </div>
  <!-- review-section ends here -->
 

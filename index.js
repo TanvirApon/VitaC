@@ -4,13 +4,16 @@ var increase = document.getElementById("increase");
 var decrease = document.getElementById("decrease");
 var quantity = document.getElementById('quantity');
 
+var wishList = document.getElementById("wishlist-icon");
+
+//increase button
 increase.addEventListener('click',function(){
  
   var currQuan = parseInt(quantity.innerHTML)
   quantity.innerHTML = currQuan + 1;
 });
 
-
+// decrease button
 decrease.addEventListener('click',function(){
   var currQuan = parseInt(quantity.innerHTML);
    if(currQuan <=0){
@@ -24,6 +27,22 @@ decrease.addEventListener('click',function(){
 });
 
 
+
+//WhishLiast button work
+
+wishList.addEventListener('click',function(){
+  if(wishList.style.color === ""){
+    wishList.style.color = "black";
+  }
+  else{
+    wishList.style.color = "";
+  }
+
+});
+
+
+
+// readmore on click option
 function readMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
