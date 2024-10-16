@@ -51,3 +51,9 @@ function readMore() {
   }
 }
 
+
+function select(element){
+  var img = element.querySelector("img");
+  img.style.border="1px solid black";
+}
+

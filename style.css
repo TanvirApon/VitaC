@@ -6,6 +6,10 @@
 body {  
     margin: 0;
 }
+.search-form::placeholder {
+    text-align: center; 
+}
+
 .accordion-button::after{
     background-image: url('Images/Icon/add_circle.png');
 }
@@ -160,6 +164,10 @@ a{
     .heading{
         font-size:25px;
         font-weight: bold;
+    }
+    .person,.shopping_cart{
+        display: none;
+
     }
     .header{
         text-align: center;
