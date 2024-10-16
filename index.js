@@ -6,9 +6,8 @@ var quantity = document.getElementById('quantity');
 
 var wishList = document.getElementById("wishlist-icon");
 
-//increase button
+// increase button
 increase.addEventListener('click',function(){
- 
   var currQuan = parseInt(quantity.innerHTML)
   quantity.innerHTML = currQuan + 1;
 });
@@ -23,13 +22,9 @@ decrease.addEventListener('click',function(){
    {
     quantity.innerHTML = currQuan - 1;
    }
-  
 });
 
-
-
-//WhishLiast button work
-
+// WhishLiast button work
 wishList.addEventListener('click',function(){
   if(wishList.style.color === ""){
     wishList.style.color = "black";
@@ -37,10 +32,7 @@ wishList.addEventListener('click',function(){
   else{
     wishList.style.color = "";
   }
-
 });
-
-
 
 // readmore on click option
 function readMore() {
@@ -58,3 +50,4 @@ function readMore() {
     moreText.style.display = "inline";
   }
 }
+

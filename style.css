@@ -1,12 +1,22 @@
 *{
     box-sizing: border-box;
-    font-family: 'LucidaGrande';
-    src: url('fonts/LucidaGrandeBold.ttf');
+    font-family: 'Roboto';
+    src: url('font/Roboto-Light.ttf');
 }            
-body {
+body {  
     margin: 0;
 }
-
+.accordion-button::after{
+    background-image: url('Images/Icon/add_circle.png');
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url('Images/Icon/remove_circle.png');
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #2B6A4A;
+    border-radius: 50%; 
+}
 /* for desktop device */
 @media (min-width: 1024px) {
 .heading{
@@ -240,14 +250,7 @@ a{
     /* question-section ends here */
 
     /* review section starts from .here */
-    .review-section .carousel .carousel-control-prev, .carousel-control-next {
-      height: 100px;
-      width: 100px;
-      outline: black;
-      background-size: 100%, 100%;
-      border-radius: 50%;
-      border: 1px solid black;
-      background-image: none;
+
     } 
     /* review section ends here */
     
