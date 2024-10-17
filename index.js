@@ -4,6 +4,7 @@ var increase = document.getElementById("increase");
 var decrease = document.getElementById("decrease");
 var quantity = document.getElementById('quantity');
 
+
 var wishList = document.getElementById("wishlist-icon");
 
 // increase button
@@ -51,9 +52,43 @@ function readMore() {
   }
 }
 
+function selectFlavour(element){
+  var imagesAll = document.querySelectorAll(".flavour img");
+  for (var i = 0; i < imagesAll.length; i++) {
+    imagesAll[i].style.border = "none"; 
+    imagesAll[i].style.background = "none"; 
+  }
+   var image = element.querySelector("img");
+   image.style.border = "2px solid black";
+   image.style.background = "#c0c2c4";
 
-function select(element){
-  var img = element.querySelector("img");
-  img.style.border="1px solid black";
+   var flavour = image.className; 
+   var flavourHeading = document.querySelector('.head'); 
+   flavourHeading.textContent = flavour;
 }
 
+function selectImage(element){
+  var imagesAll = document.querySelectorAll(".selected img");
+  for (var i = 0; i < imagesAll.length; i++) {
+    imagesAll[i].style.border = "none"; 
+    imagesAll[i].style.background = "none"; 
+  }
+   var image = element.querySelector("img");
+   image.style.border = "1px solid black";
+   image.style.background = "#c0c2c4";
+
+}
+
+function accordion(element) {
+  var plus = element.querySelector('.add'); 
+  var minus = element.querySelector('.remove');
+
+
+  if (plus.style.display === 'none') {
+      plus.style.display = 'inline';    
+      minus.style.display = 'none';     
+  } else {
+      plus.style.display = 'none';     
+      minus.style.display = 'inline';  
+  }
+}
