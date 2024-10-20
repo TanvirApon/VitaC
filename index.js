@@ -4,7 +4,7 @@ var increase = document.getElementById("increase");
 var decrease = document.getElementById("decrease");
 var quantity = document.getElementById('quantity');
 var wishList = document.querySelector("#wishlist_icon i");
-var icon = document.querySelector(".form-select ");
+var icon = document.querySelector(".form-select");
 
 // increase button
 increase.addEventListener('click',function(){
@@ -89,5 +89,5 @@ function accordion(element) {
 }
 
 icon.addEventListener('click', () => {
-  icon.classList.toggle('show-arrow'); 
+  icon.classList.toggle('select-arrow'); 
 });
