@@ -18,6 +18,13 @@ body {
     /* background-image: url('Images/Icon/add_circle.png'); */
     display: none;
 }
+.accordion-button:not(.collapsed){
+    background-color: white;
+    border:none;
+}
+.accordion-button:focus{
+    box-shadow:none;
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
