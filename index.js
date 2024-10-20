@@ -3,9 +3,7 @@ console.log("Js File has been added");
 var increase = document.getElementById("increase");
 var decrease = document.getElementById("decrease");
 var quantity = document.getElementById('quantity');
-
-
-var wishList = document.getElementById("wishlist-icon");
+var wishList = document.querySelector("#wishlist_icon i");
 
 // increase button
 increase.addEventListener('click',function(){
@@ -25,14 +23,9 @@ decrease.addEventListener('click',function(){
    }
 });
 
-// WhishLiast button work
+// WhishList button work
 wishList.addEventListener('click',function(){
-  if(wishList.style.color === ""){
-    wishList.style.color = "black";
-  }
-  else{
-    wishList.style.color = "";
-  }
+  wishList.classList.toggle('black-color');
 });
 
 // readmore on click option
@@ -40,7 +33,7 @@ function readMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("read-btn");
-
+  
   if (dots.style.display === "none") {
     dots.style.display = "inline";
     btnText.innerHTML = "Read more"; 
@@ -77,12 +70,13 @@ function selectImage(element){
    image.style.border = "1px solid black";
    image.style.background = "#c0c2c4";
 
+   var selectImage = document.querySelector("#image-select");
+   selectImage.src = image.src;
 }
 
 function accordion(element) {
   var plus = element.querySelector('.add'); 
   var minus = element.querySelector('.remove');
-
 
   if (plus.style.display === 'none') {
       plus.style.display = 'inline';    

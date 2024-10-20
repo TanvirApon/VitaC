@@ -13,7 +13,10 @@ body {
     background-color: transparent;
     outline: none;
 }
-
+#default{
+    background-color: #c0c2c4;
+    border: 2px solid black;
+}
 .accordion-button::after, .accordion-button:not(.collapsed)::after{
     /* background-image: url('Images/Icon/add_circle.png'); */
     display: none;
@@ -26,10 +29,22 @@ body {
     box-shadow:none;
 }
 
+#wishlist_icon{
+    color: grey;
+}
+.black-color{
+    color:black;
+}
+.form-select:focus, .form-select:active {
+    outline: none;
+    box-shadow: none;
+    border: #888c89;
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #2B6A4A;
     border-radius: 50%; 
+    background-size: 20px;
 }
 /* for desktop device */
 @media (min-width: 1024px) {

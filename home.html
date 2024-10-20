@@ -73,7 +73,7 @@
     <div class="row">
         <div class="col-12 col-md-12 col-lg-6 col-xl-6 cart-picture">
             <div class="main-image bg-light d-flex justify-content-center mb-4">
-             <img src="Images/image 37.png" alt="main-image">
+             <img id="image-select" src="Images/image37_1.png" alt="main-image">
             </div>
             <!-- main-image ends here -->
             <div class="sub-image">
@@ -81,22 +81,22 @@
                      <button class=" btn m-2" id="left-side"><i class="material-icons">arrow_back</i></button>
                      <div class="card w-25 m-3">
                          <a href="#" class="selected" onclick="selectImage(this)">
-                             <img src="Images/image 37.png" class="card-img-top one card-img " alt="orange">
+                             <img id="default" src="Images/image37_1.png" class="card-img-top one card-img " alt="orange">
                          </a>
                      </div>
                      <div class="card w-25 m-3">
                          <a href="#" class="selected" onclick="selectImage(this)">
-                             <img src="Images/image 37.png" class="card-img-top two card-img " alt="orange">
+                             <img src="Images/image37_2.png" class="card-img-top two card-img " alt="orange">
                          </a>
                      </div>
                      <div class="card w-25 m-3" >
                          <a href="#" class="selected" onclick="selectImage(this)">
-                             <img src="Images/image 37.png" class="card-img-top three card-img " alt="orange">
+                             <img src="Images/image37_3.png" class="card-img-top three card-img " alt="orange">
                          </a>
                      </div>
                      <div class="card w-25 m-3" >
                          <a href="#" class="selected" onclick="selectImage(this)">
-                             <img src="Images/image 37.png" class="card-img-top card-img " alt="orange">
+                             <img src="Images/image37_4.png" class="card-img-top card-img " alt="orange">
                          </a>
                      </div> 
                      <button class=" btn m-2" id="right-side"><i class="material-icons">arrow_forward</i>
@@ -156,7 +156,7 @@
                     <div class="image-section d-flex justify-content-around">
                         <div class="orange m-3 border-2">
                             <a href="#" class="flavour" onclick="selectFlavour(this)">
-                              <img class="orange" src="Images/image 42.png"  alt="orange">
+                              <img class="orange" id="default" src="Images/image 42.png"  alt="orange">
                             </a>
                         </div>
                         <div class="berry m-3">
@@ -176,7 +176,7 @@
              <hr>
              <div class="item-add d-flex justify-content-start mb-2">   
                      <div class="dropdown mt-3">
-                         <select class="form-select w-auto rounded-pill bg-light" aria-label="Default select example">
+                         <select class="form-select w-auto rounded-pill bg-light">
                              <option selected>100 ML</option>
                              <option value="50">50 ML</option>
                              <option value="150">150 ML</option>
@@ -205,9 +205,9 @@
               <!-- Wishlist starts from here -->
               <div class="wishlist m-3 d-flex justify-content-start">
                 <div class="icon m-1">
-                    <a href="#">
-                        <i id="wishlist-icon" class="material-icons">favorite</i>
-                       </a>
+                    <span id="wishlist_icon">
+                        <i role="button" class="material-icons">favorite</i>
+                    </span>
                 </div>
                 <div class="head m-1 fw-bold">
                     Add to Wishlist
@@ -224,7 +224,7 @@
              </nav>
 
              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
@@ -285,7 +285,7 @@
                           </div>
                       </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
