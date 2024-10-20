@@ -17,6 +17,11 @@ body {
     background-color: #c0c2c4;
     border: 2px solid black;
 }
+.show-arrow{
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10" stroke-width="2" d="m2 5 6 6 6-6" /%3e');
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
 .accordion-button::after, .accordion-button:not(.collapsed)::after{
     /* background-image: url('Images/Icon/add_circle.png'); */
     display: none;
