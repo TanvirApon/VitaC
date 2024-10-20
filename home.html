@@ -80,24 +80,24 @@
                  <div class="carousel-inner d-flex justify-content-between">
                      <button class=" btn m-2" id="left-side"><i class="material-icons">arrow_back</i></button>
                      <div class="card w-25 m-3">
-                         <a href="#" class="selected" onclick="selectImage(this)">
+                         <span role="button" class="selected" onclick="selectImage(this)">
                              <img id="default" src="Images/image37_1.png" class="card-img-top one card-img " alt="orange">
-                         </a>
+                         </span>
                      </div>
                      <div class="card w-25 m-3">
-                         <a href="#" class="selected" onclick="selectImage(this)">
+                         <span role="button"class="selected" onclick="selectImage(this)">
                              <img src="Images/image37_2.png" class="card-img-top two card-img " alt="orange">
-                         </a>
+                         </span>
                      </div>
                      <div class="card w-25 m-3" >
-                         <a href="#" class="selected" onclick="selectImage(this)">
+                         <span role="button" class="selected" onclick="selectImage(this)">
                              <img src="Images/image37_3.png" class="card-img-top three card-img " alt="orange">
-                         </a>
+                         </span>
                      </div>
                      <div class="card w-25 m-3" >
-                         <a href="#" class="selected" onclick="selectImage(this)">
+                         <span role="button" class="selected" onclick="selectImage(this)">
                              <img src="Images/image37_4.png" class="card-img-top card-img " alt="orange">
-                         </a>
+                         </span>
                      </div> 
                      <button class=" btn m-2" id="right-side"><i class="material-icons">arrow_forward</i>
                      </button>
@@ -142,7 +142,7 @@
                  Vitamin C also acts as a powerful antioxidant, neutralizing free radicals and protecting cells from oxidative damage.
               </span>
               <br>
-              <a href="#" class="read" id="read-btn" onclick="readMore()">Read More</a>
+              <span role="button" class="read" id="read-btn" onclick="readMore()">Read More</span>
         
              </div>
              <!-- info ends here -->
@@ -155,19 +155,19 @@
                     </div>
                     <div class="image-section d-flex justify-content-around">
                         <div class="orange m-3 border-2">
-                            <a href="#" class="flavour" onclick="selectFlavour(this)">
+                            <span role="button" class="flavour" onclick="selectFlavour(this)">
                               <img class="orange" id="default" src="Images/image 42.png"  alt="orange">
-                            </a>
+                            </span>
                         </div>
                         <div class="berry m-3">
-                            <a href="#" class="flavour" onclick="selectFlavour(this)">
+                            <span role="button" class="flavour" onclick="selectFlavour(this)">
                               <img class="berry" src="Images/image 45.png" alt="berry">
-                            </a>
+                            </span>
                         </div>
                         <div class="lemon m-3">
-                            <a href="#" class="flavour" onclick="selectFlavour(this)">
+                            <span role="button" class="flavour" onclick="selectFlavour(this)">
                               <img class="lemon" src="Images/image 44.png" alt="lemon">                        
-                            </a>
+                            </span>
                         </div>
                     </div>
                     <!-- image-section ends here -->
@@ -175,13 +175,14 @@
              <!-- flavour-section ends here -->
              <hr>
              <div class="item-add d-flex justify-content-start mb-2">   
-                     <div class="dropdown mt-3">
-                         <select class="form-select w-auto rounded-pill bg-light ">
+                     <div class="dropdown mt-4">
+                         <select class="form-select w-auto rounded-pill bg-light position-relative">
                              <option selected>100 ML</option>
                              <option value="50">50 ML</option>
                              <option value="150">150 ML</option>
                              <option value="200">200 ML</option>
                          </select>
+                         <span role="btn" id="button-icon" class="material-icons select-arrow">keyboard_arrow_down</span>
                      </div>
                      <!-- dropdown ends here -->
                     <div class="cart-add d-flex justify-content-center m-3">
