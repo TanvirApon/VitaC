@@ -89,5 +89,13 @@ function accordion(element) {
 }
 
 icon.addEventListener('click', () => {
-  icon.classList.toggle('select-arrow'); 
+  var downArrow = document.querySelector('.down-arrow');
+  var upArrow = document.querySelector('.up-arrow');
+  if (downArrow.style.display !== 'none') {
+    downArrow.style.display = 'none';  
+    upArrow.style.display = 'inline'; 
+  } else {
+    upArrow.style.display = 'none';  
+    downArrow.style.display = 'inline'; 
+  } 
 });

@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 .search-form::placeholder {
-    text-align: right; 
+    text-align: center; 
 }
 #decrease:hover,#increase:hover{
     background-color: transparent;
@@ -23,11 +23,7 @@ body {
 #button-icon{
     position:absolute;
     top:6px;
-    right:6px;
-}
-.select-arrow{
-    /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/></svg>');    background-repeat: no-repeat; */
-    transform: rotate();
+    right:15px;
 }
 .accordion-button::after, .accordion-button:not(.collapsed)::after{
     /* background-image: url('Images/Icon/add_circle.png'); */
@@ -58,12 +54,6 @@ body {
     border-radius: 50%; 
     background-size: 20px;
 }
-/* for desktop device */
-@media (min-width: 1024px) {
-.heading{
-    font-size:25px;
-    font-weight: bold;
-}
 .header{
     text-align: center;
     font-size: 40px;
@@ -75,60 +65,26 @@ a{
     color: #888c89;
     font-size: 20px;
 }
-
-/* cart-section starts here */
-.cart-section .row .cart-information .review-rating .rating{
-    line-height: 3;
-}
-
-.cart-section .row .cart-information .review-rating .reviews{
-    font-size: 25px;
-}
-.cart-section .row .cart-information .price{
+.price{
     color: #2B6A4A;
     font-size: 30px;
     font-weight: bold;
 }
-.cart-section .row .cart-information .info{
+.info{
     font-size: 20px;
 }
-.cart-section .row .cart-information .info .read {
+.read {
     text-decoration: underline;
     color:#2B6A4A;
 }
-.cart-section .row .cart-information .info #more{
+#more{
     display: none;
 }
-.cart-section .row .cart-information .flavour-section .image-section .orange a img{
-    height: 75px;
+.reviews{
+    font-size: 25px;
 }
-.cart-section .row .cart-information .flavour-section .image-section .berry a img{
-    height: 75px;
-}
-.cart-section .row .cart-information .flavour-section .image-section .lemon a img{
-    height: 75px;
-}
-.cart-section .row .cart-information .flavour-section .image-section .orange a img:hover{
-    border: 2px solid #2B6A4A;
-    height: 75px;
-}
-.cart-section .row .cart-information .flavour-section .image-section .berry a img:hover{
-    border: 2px solid #2B6A4A;
-    height: 75px;
-}
-.cart-section .row .cart-information .flavour-section .image-section .lemon a img:hover{
-    border: 2px solid #2B6A4A;
-    height: 75px;
-}
-/* cart-section ends here */
-
-/* images-card starts here */
-.image-background{
-    background-color: #E8EDEA;
-    margin-bottom: 20px;
-}
-/* images-card ends here */
-
+/* for desktop device */
+@media (min-width: 1024px) {
 /* question-section starts here */
 .question-section{
     width: 650px;
@@ -152,8 +108,7 @@ a{
 }
 .stayconnected-section .background{
     background-color:  #2B6A4A;
-    border-radius: 20px;
-    height: 350px;  
+    border-radius: 20px; 
     padding: 25px;
     text-align: center;
     position: relative;
@@ -184,108 +139,43 @@ a{
 }
 /* stayconnected-section ends here */
 
-/* footer starts from here */
-
-/* footer ends here */
 }
 
 
 
 /* for mobile device */
-@media (max-width: 768px) {
-    .heading{
-        font-size:25px;
-        font-weight: bold;
+@media (max-width: 576px) {
+    .search_bar{
+        width: 100%;
     }
-    .person,.shopping_cart{
+    .login,.cart{
         display: none;
-
     }
     .header{
-        text-align: center;
-        font-size: 40px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    a{
-        text-decoration: none;
-        color: #888c89;
-        font-size: 20px;
-    }
-    /* cart-section starts here */
-    .cart-section .row .cart-information .review-rating .rating{
-        line-height: 3;
-    }
-    
-    .cart-section .row .cart-information .review-rating .reviews{
-        font-size: 25px;
-    }
-    .cart-section .row .cart-information .price{
-        color: #2B6A4A;
         font-size: 30px;
-        font-weight: bold;
     }
-    .cart-section .row .cart-information .info{
-        font-size: 20px;
+    .info,.cart-information{
+        padding:20px;
     }
-    .cart-section .row .cart-information .info .read {
-        text-decoration: underline;
-        color:#2B6A4A;
+    .image img {
+        width: 100%; 
     }
-    .cart-section .row .cart-information .info #more{
-        display: none;
+    .email-input {
+        width: 100%;
     }
-    .cart-section .row .cart-information .flavour-section .image-section .orange a img{
-        height: 75px;
-    }
-    .cart-section .row .cart-information .flavour-section .image-section .berry a img{
-        height: 75px;
-    }
-    .cart-section .row .cart-information .flavour-section .image-section .lemon a img{
-        height: 75px;
-    }
-    .cart-section .row .cart-information .flavour-section .image-section .orange a img:hover{
-        border: 2px solid #2B6A4A;
-        height: 75px;
-    }
-    .cart-section .row .cart-information .flavour-section .image-section .berry a img:hover{
-        border: 2px solid #2B6A4A;
-        height: 75px;
-    }
-    .cart-section .row .cart-information .flavour-section .image-section .lemon a img:hover{
-        border: 2px solid #2B6A4A;
-        height: 75px;
-    }
-    /* cart-section ends here */
-    
-    /* images-card starts here */
-    .image-background{
-        background-color: #E8EDEA;
-        margin-bottom: 20px;
-    }
-    .image-background .image a img{
-        height: 70px;
-    }
-    /* images-card ends here */
-    
-    /* question-section starts here */
+    /* * question-section starts here */ */
     .question-section{
-        width: 650px;
         margin-bottom: 50px; 
     }
     .question-section .accordion .accordion-header .accordion-button{
-        font-size: 20px;
+        font-size: 12px;
         font-weight: bold;
     }
     .question-section .accordion .accordion-collapse .accordion-body{
-        font-size: 18px;
+        font-size: 14px;
         color: #888c89; 
     }
     /* question-section ends here */
-
-    /* review section starts from .here */
-
-    /* review section ends here */
     
     /* stayconnected-section starts from here */
     .stayconnected-section{
@@ -295,8 +185,7 @@ a{
     }
     .stayconnected-section .background{
         background-color:  #2B6A4A;
-        border-radius: 20px;
-        height: 350px;  
+        border-radius: 20px;  
         padding: 25px;
         text-align: center;
         position: relative;
@@ -307,14 +196,14 @@ a{
         right:0%
     }
     .stayconnected-section .background .leaf-section img{
-        height: 200px; 
+        height: 100px; 
     }
     .stayconnected-section .background .heading{
-        font-size: 35px;
-        margin-bottom: 10px;
+        font-size: 30px;
     }
     .stayconnected-section .background .paragraph{
-        font-size: 20px;
+        font-size: 11px;
+        margin-bottom: 10px;
     }
     .stayconnected-section .background .orange-section {
         position:absolute;
@@ -323,12 +212,9 @@ a{
     }
     .stayconnected-section .background .orange-section img{
         opacity: 0.2;
-        height: 200px; 
+        height: 100px; 
     }
     /* stayconnected-section ends here */
     
-    /* footer starts from here */
-    
-    /* footer ends here */
 
 }
