@@ -25,6 +25,10 @@ body {
     top:6px;
     right:15px;
 }
+.flavour-section {
+    margin: 0 auto;
+    max-width: 100%;
+}
 .accordion-button::after, .accordion-button:not(.collapsed)::after{
     /* background-image: url('Images/Icon/add_circle.png'); */
     display: none;
