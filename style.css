@@ -14,8 +14,8 @@ body {
     outline: none;
 }
 #default{
-    background-color: #c0c2c4;
-    border: 2px solid black;
+    border: 1px solid green;
+    border-radius: 10px;
 }
 .form-select{
     background-image:none;
@@ -24,6 +24,7 @@ body {
     position:absolute;
     top:6px;
     right:15px;
+    width: 25px;
 }
 .flavour-section {
     margin: 0 auto;
@@ -40,12 +41,19 @@ body {
 .accordion-button:focus{
     box-shadow:none;
 }
-
-#wishlist_icon{
-    color: grey;
+.btn:hover {
+    outline: none;
+    border: none;
 }
-.black-color{
-    color:black;
+.heading{
+    font-size: 20px;
+    font-weight: bold;
+}
+/* #wishlist_icon{
+    color:white;
+} */
+.red-color{
+    color:red;
 }
 .form-select:focus, .form-select:active {
     outline: none;
@@ -67,7 +75,7 @@ body {
 a{
     text-decoration: none;
     color: #888c89;
-    font-size: 20px;
+    font-size: 18px;
 }
 .price{
     color: #2B6A4A;
@@ -87,8 +95,50 @@ a{
 .reviews{
     font-size: 25px;
 }
+.footer{
+    background-image: url('Images/footer.jpeg');
+    background-size: 100% 100%;
+    margin-top: -170px;
+}
+.footer-inside{
+    padding: 10px;
+}
+.footer-inside .row{
+    margin-top: 150px;
+}
+
 /* for desktop device */
 @media (min-width: 1024px) {
+
+/* cart-section starts from here */
+.main-image{
+    background-color: #f7e9db;
+    border-radius: 25px;
+}
+.selected img{
+    padding: 5px;
+}
+ .flavour img{
+    padding:5px;
+ }
+/* cart-section ends her */
+
+/* images-card starts here */
+.image-background{
+    background-color: #E8EDEA;
+}
+/* images-card ends here */
+
+.shape-section{
+    position: absolute;
+    top: 110%;
+    left: 0%;
+}
+.leaf-section{
+    position: absolute;
+    top: 250%;
+    right: 0%;
+}
 /* question-section starts here */
 .question-section{
     width: 650px;
@@ -142,13 +192,10 @@ a{
     height: 200px; 
 }
 /* stayconnected-section ends here */
-
 }
 
-
-
 /* for mobile device */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .search_bar{
         width: 100%;
     }
@@ -167,6 +214,11 @@ a{
     .email-input {
         width: 100%;
     }
+    /* images-card starts here */
+    .image-background{
+     background-color: #E8EDEA;
+    }
+    /* images-card ends here */
     /* * question-section starts here */ */
     .question-section{
         margin-bottom: 50px; 
@@ -180,7 +232,7 @@ a{
         color: #888c89; 
     }
     /* question-section ends here */
-    
+
     /* stayconnected-section starts from here */
     .stayconnected-section{
         text-align: center;
@@ -219,6 +271,4 @@ a{
         height: 100px; 
     }
     /* stayconnected-section ends here */
-    
-
 }

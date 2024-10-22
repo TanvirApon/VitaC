@@ -10,495 +10,543 @@
     <title>VitC </title>
 </head>
 <body>
- 
- <!-- navbar-section starts from here -->
- <div class="navbar-section bg-light mb-5">
-    <nav class="navbar navbar-expand-lg navbar-light container">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="Images/Vector.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#">NEW LAUNCHES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#">SALE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#">BLOG</a>
-              </li>
-            </ul>
-            <form class="d-flex justify-content-around">
-                <div class="search mx-2 w-100"> 
-                    <div class="input-group">
-                        <input type="email" class="form-control search-form rounded-pill px-2 search_bar" placeholder="Search Product" aria-label="" aria-describedby="basic-addon2">
-                        <a href="#">
-                            <span class="input-group-text rounded-pill position-absolute start-0 bg-light" id="basic-addon2">
-                                <i class="material-icons">search</i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </form>
-            
-            <div class="login">
-                <a href="#" class=" person border rounded-pill p-2 mx-2">
-                    <i class="material-icons">person_outline</i>
-                </a>
-            </div>
-            <div class="cart">
-                <a href="#" class="shopping_cart border rounded-pill p-2">
-                    <i class="material-icons">shopping_cart</i>
-                </a>
-            </div>
-          
-          </div>
-        </div>
-    </nav>
-    <!-- navbar ends here -->
- </div>
- <!-- navbar-section ends here -->
-
- <!-- cart-section starts from here -->
- <div class="cart-section d-flex justify-content-center mb-5 container">
-    <div class="row">
-        <div class="col-12 col-md-12 col-lg-6 col-xl-6 cart-picture">
-            <div class="main-image bg-light d-flex justify-content-center mb-4">
-             <img id="image-select" src="Images/image37_1.png" alt="main-image">
-            </div>
-            <!-- main-image ends here -->
-            <div class="sub-image">
-                 <div class="carousel-inner d-flex justify-content-between">
-                     <button class=" btn m-2" id="left-side"><i class="material-icons">arrow_back</i></button>
-                     <div class="card w-25 m-3">
-                         <span role="button" class="selected" onclick="selectImage(this)">
-                             <img id="default" src="Images/image37_1.png" class="card-img-top one card-img " alt="orange">
-                         </span>
-                     </div>
-                     <div class="card w-25 m-3">
-                         <span role="button"class="selected" onclick="selectImage(this)">
-                             <img src="Images/image37_2.png" class="card-img-top two card-img " alt="orange">
-                         </span>
-                     </div>
-                     <div class="card w-25 m-3" >
-                         <span role="button" class="selected" onclick="selectImage(this)">
-                             <img src="Images/image37_3.png" class="card-img-top three card-img " alt="orange">
-                         </span>
-                     </div>
-                     <div class="card w-25 m-3" >
-                         <span role="button" class="selected" onclick="selectImage(this)">
-                             <img src="Images/image37_4.png" class="card-img-top card-img " alt="orange">
-                         </span>
-                     </div> 
-                     <button class=" btn m-2" id="right-side"><i class="material-icons">arrow_forward</i>
-                     </button>
-                 </div>
-                 <!-- carousel-inner ends here -->
-            </div>
-            <!-- sub-image ends here -->
-         </div>
-         <!-- cart-picture ends here -->
-         <div class="col-12 col-md-12 col-lg-6 col-xl-6 cart-information">      
-             <div class="header text-start">
-                 Vitamin C-100ML-Original
-             </div>
-             <!-- header ends here -->
-             <div class="review-rating d-flex">
-                <div class="rating m-3">
-                    <span class="material-icons text-warning">star</span>
-                    <span class="material-icons text-warning">star</span>
-                    <span class="material-icons text-warning">star</span>
-                    <span class="material-icons text-warning">star</span>
-                    <span class="material-icons text-warning">star_half</span>
-                </div>
-                 <!-- rating ends here -->
-                 <div class="reviews m-3">
-                   288 reviews |   100ml
-                 </div>
-                 <!-- reviews ends here -->  
-             </div>
-              <!-- review-rating ends here -->
-             <div class="price m-3">
-                 $ 40.99
-             </div>
-             <!-- price ends here -->
-              <hr>
-             <div class="info">
-                 Vitamin C, also known as ascorbic acid, is an essential nutrient that supports numerous bodily functions.
-                 It is crucial for maintaining healthy skin, blood vessels, bones, and cartilage, primarily due to its role in collagen synthesis.<span id="dots">...</span>
-       
-              <span id="more">
-                 Collagen is a protein that provides structure to the skin and helps repair tissues, making Vitamin C important for wound healing.
-                 Additionally, it boosts the immune system by enhancing the activity of white blood cells, enabling the body to fight infections more effectively.
-                 Vitamin C also acts as a powerful antioxidant, neutralizing free radicals and protecting cells from oxidative damage.
-              </span>
-              <br>
-              <span role="button" class="read" id="read-btn" onclick="readMore()">Read More</span>
-        
-             </div>
-             <!-- info ends here -->
-             <hr>
-            <div class="flavour-section d-flex justify-content-start">
-                    <div class="heading m-2">
-                     <h3 class="fw-bold">Flavour</h3>
-
-                     <h5 class="fw-bold head">Orange</h5>
-                    </div>
-                    <div class="image-section d-flex justify-content-around">
-                        <div class="orange m-2 border-2">
-                            <span role="button" class="flavour" onclick="selectFlavour(this)">
-                              <img class="orange" id="default" src="Images/image 42.png"  alt="orange">
-                            </span>
-                        </div>
-                        <div class="berry m-2">
-                            <span role="button" class="flavour" onclick="selectFlavour(this)">
-                              <img class="berry" src="Images/image 45.png" alt="berry">
-                            </span>
-                        </div>
-                        <div class="lemon m-2">
-                            <span role="button" class="flavour" onclick="selectFlavour(this)">
-                              <img class="lemon" src="Images/image 44.png" alt="lemon">                        
-                            </span>
+    <!-- navbar-section starts from here -->
+    <div class="navbar-section bg-light mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Images/Vector.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" aria-current="page" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" aria-current="page" href="#">NEW LAUNCHES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" aria-current="page" href="#">SALE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" aria-current="page" href="#">BLOG</a>
+                </li>
+                </ul>
+                <form class="d-flex justify-content-around">
+                    <div class="search mx-2 w-100"> 
+                        <div class="input-group">
+                            <input type="email" class="form-control search-form rounded-pill px-2 search_bar" placeholder="Search Product" aria-label="" aria-describedby="basic-addon2">
+                            <a href="#">
+                                <span class="input-group-text rounded-pill position-absolute start-0 bg-light" id="basic-addon2">
+                                    <i class="material-icons">search</i>
+                                </span>
+                            </a>
                         </div>
                     </div>
-                    <!-- image-section ends here -->
-            </div>
-             <!-- flavour-section ends here -->
-             <hr>
-             <div class="item-add"> 
-                    <div class="row">
-                            <div class="col-6 col-6 col-md-4 col-lg-4 col-xl-4 dropdown w-auto m-2">
-                                <select class="form-select w-auto rounded-pill bg-light position-relative">
-                                    <option selected>100 ML</option>
-                                    <option value="50">50 ML</option>
-                                    <option value="150">150 ML</option>
-                                    <option value="200">200 ML</option>
-                                </select>
-                                <span role="btn" id="button-icon" class="material-icons down-arrow">keyboard_arrow_down</span>
-                                <span role="btn" id="button-icon" class="material-icons up-arrow" style="display: none;">keyboard_arrow_up</span>
-                            </div>
-                            <!-- dropdown ends here -->
-                                <div class="col-6 col-6 col-md-4 col-lg-4 col-xl-4 cart-add w-auto m-2">
-                                    <div class="cart-add-container bg-light rounded-pill">
-                                        <button class="btn btn-light rounded-pill" id="decrease">−</button>
-                                        <span class="mx-2 quantity" id="quantity">1</span>
-                                        <button class="btn btn-light rounded-pill" id="increase">+</button>
-                                    </div>
-                                    <!-- cart-add-container ends here -->
-                                </div>
-                                <!-- cart-add ends here -->  
-
-                            <div class="col-12 col-6 col-md-4 col-lg-4 col-xl-4 cart-button border-none m-2 p-sm-">
-                                <button class="btn bg-success btn-lg  rounded-pill text-white w-100 p-1">Add to Cart</button>
-                             </div>
-                             <!-- cart-button ends here -->
-                    </div>
-                    <!-- row ends here    -->
-             </div>
-             <!-- item-add ends here -->
-              <!-- Wishlist starts from here -->
-              <div class="wishlist m-3 d-flex justify-content-start">
-                <div class="icon m-1">
-                    <span id="wishlist_icon">
-                        <i role="button" class="material-icons">favorite</i>
+                </form>  
+                <div class="login">
+                    <span role="button" class="person mx-2">
+                        <i class="material-icons border rounded-pill p-2 ">person_outline</i>
                     </span>
                 </div>
-                <div class="head m-1 fw-bold">
-                    Add to Wishlist
+                <div class="cart">
+                    <span role="button" class="shopping_cart ">
+                        <i class="material-icons border rounded-pill p-2">shopping_cart</i>
+                    </span>
                 </div>
-              </div>
-              <!-- Wishlist ends here -->
-          
-             <!-- details-section starts from here -->
-             <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Details</button>
-                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Shipping</button>
+            </div>
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+    </div>
+    <!-- navbar-section ends here -->
+
+    <!-- cart-section starts from here -->
+    <div class="cart-section d-flex justify-content-center mb-5 container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 cart-picture">
+                <div class="main-image d-flex justify-content-center mb-4 p-4">
+                <img id="image-select" src="Images/image37_1.png" alt="main-image">
                 </div>
-             </nav>
-             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" onclick="accordion(this)">
-                                      KEY FEATURES
-                                      <div class="btn position-absolute end-0" >
-                                        <i class="material-icons text-success add">add_circle</i> 
-                                        <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                                   </div>
-                                    </button>
-                                  </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-secondary">VitC delivers 1000mg of pure Vitamin C per capsule, enhanced with bioflavonoids for optimal absorption. Our vegan-friendly formula supports immune health, promotes collagen production, and protects against free radicals, ensuring you look and feel your best.</div>
-                          </div>
+                <!-- main-image ends here -->
+                <div class="sub-image">
+                    <div class="carousel-inner d-flex justify-content-between">
+                        <button class=" btn m-2" id="left-side"><i class="material-icons">arrow_back</i></button>
+                       
+                        <div class="image-container d-flex justify-content-between">
+                            <!-- First set of images (1-4) -->
+                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                                <span role="button">
+                                    <img src="Images/image37_1.png" class="card-img-top" alt="Image 1">
+                                </span>
+                            </div>
+                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                                <span role="button">
+                                    <img src="Images/image37_2.png" class="card-img-top" alt="Image 2">
+                                </span>
+                            </div>
+                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                                <span role="button">
+                                    <img src="Images/image37_3.png" class="card-img-top" alt="Image 3">
+                                </span>
+                            </div>
+                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                                <span role="button">
+                                    <img src="Images/image37_4.png" class="card-img-top" alt="Image 4">
+                                </span>
+                            </div>
                         </div>
-                        <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" onclick="accordion(this)">
-                                      INGREDIENTS
-                                    <div class="btn position-absolute end-0" >
-                                        <i class="material-icons text-success add">add_circle</i> 
-                                        <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
+                
+                        <div class="image-container d-none d-flex justify-content-between">
+                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                                <span role="button">
+                                    <img src="Images/image37_5.png" class="card-img-top" alt="Image 5">
+                                </span>
+                            </div>
+                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                                <span role="button">
+                                    <img src="Images/image37_6.png" class="card-img-top" alt="Image 6">
+                                </span>
+                            </div>
+                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                                <span role="button">
+                                    <img src="Images/image37_7.png" class="card-img-top" alt="Image 7">
+                                </span>
+                            </div>
+                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                                <span role="button">
+                                    <img src="Images/image37_8.png" class="card-img-top" alt="Image 8">
+                                </span>
+                            </div>
+                        </div>
+                
+                        <div class="image-container d-none d-flex justify-content-between">
+                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                                <span role="button">
+                                    <img src="Images/image37_9.png" class="card-img-top" alt="Image 9">
+                                </span>
+                            </div>
+                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                                <span role="button">
+                                    <img src="Images/image37_10.png" class="card-img-top" alt="Image 10">
+                                </span>
+                            </div>
+                        </div>
+
+                        <button class=" btn m-2" id="right-side"><i class="material-icons">arrow_forward</i>
+                        </button>
+                    </div>
+                    <!-- carousel-inner ends here -->
+                </div>
+                <!-- sub-image ends here -->
+            </div>
+            <!-- cart-picture ends here -->
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 cart-information">      
+                <div class="header text-start m-3">
+                    Vitamin C-100ML-Original
+                </div>
+                <!-- header ends here -->
+                <div class="review-rating d-flex m-3 ">
+                    <div class="rating mt-4">
+                        <span class="material-icons text-warning">star</span>
+                        <span class="material-icons text-warning">star</span>
+                        <span class="material-icons text-warning">star</span>
+                        <span class="material-icons text-warning">star</span>
+                        <span class="material-icons text-warning">star_half</span>
+                    </div>
+                    <!-- rating ends here -->
+                    <div class="reviews m-3">
+                    288 reviews |   100ml
+                    </div>
+                    <!-- reviews ends here -->  
+                </div>
+                <!-- review-rating ends here -->
+                <div class="price m-3">
+                    $ 40.99
+                </div>
+                <!-- price ends here -->
+                <hr>
+                <div class="info m-3">
+                    Vitamin C, also known as ascorbic acid, is an essential nutrient that supports numerous bodily functions.
+                    It is crucial for maintaining healthy skin, blood vessels, bones, and cartilage, primarily due to its role in collagen synthesis.<span id="dots">...</span>
+        
+                <span id="more">
+                    Collagen is a protein that provides structure to the skin and helps repair tissues, making Vitamin C important for wound healing.
+                    Additionally, it boosts the immune system by enhancing the activity of white blood cells, enabling the body to fight infections more effectively.
+                    Vitamin C also acts as a powerful antioxidant, neutralizing free radicals and protecting cells from oxidative damage.
+                </span>
+                <br>
+                <span role="button" class="read" id="read-btn" onclick="readMore()">Read More</span>
+            
+                </div>
+                <!-- info ends here -->
+                <hr>
+                <div class="flavour-section d-flex justify-content-start m-2">
+                        <div class="heading m-2">
+                        <h3 class="fw-bold">Flavour</h3>
+
+                        <h5 class="fw-bold flavour_head">Orange</h5>
+                        </div>
+                        <div class="image-section d-flex justify-content-around">
+                            <div class="orange m-1 bg-light p-2 flavour" id="default" onclick="selectFlavour(this)">
+                                <span role="button" >
+                                <img class="orange" src="Images/image 42.png"  alt="Orange">
+                                </span>
+                            </div>
+                            <div class="berry m-1 bg-light p-2 flavour" onclick="selectFlavour(this)">
+                                <span role="button">
+                                <img class="berry" src="Images/image 45.png" alt="Berry">
+                                </span>
+                            </div>
+                            <div class="lemon m-1 bg-light p-2 flavour" onclick="selectFlavour(this)">
+                                <span role="button">
+                                <img class="lemon" src="Images/image 44.png" alt="Lemon">                        
+                                </span>
+                            </div>
+                        </div>
+                        <!-- image-section ends here -->
+                </div>
+                <!-- flavour-section ends here -->
+                <hr>
+                <div class="item-add"> 
+                        <div class="row">
+                                <div class="col-6 col-6 col-md-4 col-lg-4 col-xl-4 dropdown w-auto m-2">
+                                    <select class="form-select w-auto rounded-pill bg-light position-relative">
+                                        <option selected>100 ML</option>
+                                        <option value="50">50 ML</option>
+                                        <option value="150">150 ML</option>
+                                        <option value="200">200 ML</option>
+                                    </select>
+                                    <span role="button" id="button-icon" class="material-icons down-arrow">keyboard_arrow_down</span>
+                                    <span role="button" id="button-icon" class="material-icons up-arrow" style="display: none;">keyboard_arrow_up</span>
+                                </div>
+                                <!-- dropdown ends here -->
+                                    <div class="col-6 col-6 col-md-4 col-lg-4 col-xl-4 cart-add w-auto m-2">
+                                        <div class="cart-add-container bg-light rounded-pill">
+                                            <button class="btn btn-light rounded-pill" id="decrease">−</button>
+                                            <span class="mx-2 quantity" id="quantity">1</span>
+                                            <button class="btn btn-light rounded-pill" id="increase">+</button>
+                                        </div>
+                                        <!-- cart-add-container ends here -->
                                     </div>
-                                    </button>
-                                </h2>
-                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-secondary">Each VitC capsule contains Vitamin C (1000mg), Citrus Bioflavonoids, Rosehip Extract, and natural cellulose (capsule). Our formula is free from artificial additives, gluten, and preservatives, ensuring a pure and effective vitamin supplement for your health.
-                            </div>
-                          </div>
+                                    <!-- cart-add ends here -->  
+
+                                <div class="col-12 col-6 col-md-4 col-lg-4 col-xl-4 cart-button border-none m-2 p-sm-">
+                                    <button class="btn bg-success btn-lg  rounded-pill text-white w-100 p-1">Add to Cart</button>
+                                </div>
+                                <!-- cart-button ends here -->
                         </div>
-                        <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" onclick="accordion(this)">
-                                        HOW TO USE
-                                        <div class="btn position-absolute end-0" >
-                                            <i class="material-icons text-success add">add_circle</i> 
-                                            <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                                       </div>
-                                    </button>
-                                </h2>
-                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-secondary">For optimal results, take one capsule daily with water, preferably with a meal. Consistency is key; incorporate into your daily routine for enhanced immune support and overall wellness.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingfour">
-                                    <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" onclick="accordion(this)">
-                                       QUALITY
-                                    <div class="btn position-absolute end-0" >
-                                        <i class="material-icons text-success add">add_circle</i> 
-                                        <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                                   </div>
-                                    </button>
-                                </h2>
-                            <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                              <div class="accordion-body text-secondary">Our Vitamin C is sourced from premium ingredients and undergoes rigorous testing to ensure purity and potency. Each batch meets the highest quality standards, delivering effective support for your immune system and overall health.</div>
-                            </div>
-                          </div>
-                      </div>
+                        <!-- row ends here    -->
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" onclick="accordion(this)">
-                                        Shipping Information
+                <!-- item-add ends here -->
+                <!-- Wishlist starts from here -->
+                <div class="wishlist m-3 d-flex justify-content-start">
+                    <div class="icon m-1">
+                        <span id="wishlist_icon">
+                            <i role="button" class="material-icons">favorite</i>
+                        </span>
+                    </div>
+                    <div class="head m-1 fw-bold">
+                        Add to Wishlist
+                    </div>
+                </div>
+                <!-- Wishlist ends here -->
+            
+                <!-- details-section starts from here -->
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Details</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Shipping</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" onclick="accordion(this)">
+                                        KEY FEATURES
                                         <div class="btn position-absolute end-0" >
                                             <i class="material-icons text-success add">add_circle</i> 
                                             <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                                       </div>
-                                    </button>
-                                </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-secondary">At VitC, we prioritize your convenience by providing efficient shipping options. Orders are typically dispatched within 1-3 business days. Enjoy peace of mind with our tracking service, allowing you to monitor your shipment every step of the way. We strive to offer competitive shipping rates and free shipping for orders above a specified threshold, ensuring that your health journey is as seamless as possible.</div>
-                          </div>
+                                    </div>
+                                        </button>
+                                    </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">VitC delivers 1000mg of pure Vitamin C per capsule, enhanced with bioflavonoids for optimal absorption. Our vegan-friendly formula supports immune health, promotes collagen production, and protects against free radicals, ensuring you look and feel your best.</div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" onclick="accordion(this)">
+                                        INGREDIENTS
+                                        <div class="btn position-absolute end-0" >
+                                            <i class="material-icons text-success add">add_circle</i> 
+                                            <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
+                                        </div>
+                                        </button>
+                                    </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">Each VitC capsule contains Vitamin C (1000mg), Citrus Bioflavonoids, Rosehip Extract, and natural cellulose (capsule). Our formula is free from artificial additives, gluten, and preservatives, ensuring a pure and effective vitamin supplement for your health.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" onclick="accordion(this)">
+                                            HOW TO USE
+                                            <div class="btn position-absolute end-0" >
+                                                <i class="material-icons text-success add">add_circle</i> 
+                                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
+                                        </div>
+                                        </button>
+                                    </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">For optimal results, take one capsule daily with water, preferably with a meal. Consistency is key; incorporate into your daily routine for enhanced immune support and overall wellness.</div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingfour">
+                                        <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" onclick="accordion(this)">
+                                        QUALITY
+                                        <div class="btn position-absolute end-0" >
+                                            <i class="material-icons text-success add">add_circle</i> 
+                                            <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
+                                    </div>
+                                        </button>
+                                    </h2>
+                                <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">Our Vitamin C is sourced from premium ingredients and undergoes rigorous testing to ensure purity and potency. Each batch meets the highest quality standards, delivering effective support for your immune system and overall health.</div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" onclick="accordion(this)">
+                                            Shipping Information
+                                            <div class="btn position-absolute end-0" >
+                                                <i class="material-icons text-success add">add_circle</i> 
+                                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
+                                        </div>
+                                        </button>
+                                    </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-secondary">At VitC, we prioritize your convenience by providing efficient shipping options. Orders are typically dispatched within 1-3 business days. Enjoy peace of mind with our tracking service, allowing you to monitor your shipment every step of the way. We strive to offer competitive shipping rates and free shipping for orders above a specified threshold, ensuring that your health journey is as seamless as possible.</div>
+                            </div>
+                            </div>
+                    </div>
+                    
                 </div>
                 
-              </div>
             
+                </div>  
+                <!-- details-section ends here -->
+            </div>
+            <!-- cart-information ends here -->
+        </div>
+        <!-- row ends here -->
+    </div>
+    <!-- cart-section ends here -->
+   
+    <div class="shape-section">
+        <img src="Images/Shape.png" alt="">
+    </div>
+
+    <!-- images-card starts from here -->
+    <div class="images-card image-background mb-5">
+        <div class="container d-flex justify-content-center">
+            <div class="image m-3">
+                <a href="">
+                    <img src="Images/image 46.png" alt="vegan friendly">
+                </a>
+            </div>
+            <div class="image m-3">
+                <a href="">
+                    <img src="Images/image 47.png" alt="vegan friendly">
+                </a>
+            </div>
+            <div class="image m-3">
+                <a href="">
+                    <img src="Images/image 48.png" alt="vegan friendly">
+                </a>
+            </div>
+            <div class="image m-3">
+                <a href="">
+                    <img src="Images/image 49.png" alt="vegan friendly">
+                </a>
+            </div>
+        </div>
+        <!-- container ends here -->
+    </div>
+    <!-- images-card ends from here -->
+
+    <!--review-section starts from here -->
+    <div class="review-section mb-5">
+        <div class="header">
+            Reviews & Rating
+        </div>
         
+        <div id="demo" class="carousel" data-bs-ride="carousel">
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-50 m-3 p-3">
+                            <div class="name-rating d-flex justify-content-between">
+                            <div class="name fw-bold">
+                                Aspen Siphron
+                            </div>
+                            <div class="rating">
+                                <span class="material-icons text-warning">star</span>
+                                4.7
+                            </div>
+                            </div>
+                            <!-- name-rating ends here -->
+                            <div class="date fw-bold">
+                                May 12, 2024
+                            </div>
+                            <!-- date ends here -->
+                            <div class="text">
+                                I've been using Nature's Best Vitamin C 1000 mg tablets for six months, and the results are fantastic. My immune system feels stronger—I haven't had a single cold this flu season. I've also noticed a boost in my energy levels throughout the day.
+                            </div>
+                            <!-- text ends here -->
+                        </div>
+                        <!-- card ends here -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-50 m-3 p-3">
+                            <div class="name-rating d-flex justify-content-between">
+                            <div class="name fw-bold">
+                                Maya Johnson
+                            </div>
+                            <div class="rating">
+                                <span class="material-icons text-warning">star</span>
+                                4.4
+                            </div>
+                            </div>
+                            <!-- name-rating ends here -->
+                            <div class="date fw-bold">
+                                March 5, 2024
+                            </div>
+                            <!-- date ends here -->
+                            <div class="text">
+                                I've been using this Vitamin C supplement for a few months now, and I feel great! My energy levels are up, and I feel less fatigued during the day. It's definitely worth the investment.
+                            </div>
+                            <!-- text ends here -->
+                        </div>
+                        <!-- card ends here -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-50 m-3 p-3">
+                            <div class="name-rating d-flex justify-content-between">
+                            <div class="name fw-bold">
+                                Sophia Davis
+                            </div>
+                            <div class="rating">
+                                <span class="material-icons text-warning">star</span>
+                                4.5
+                            </div>
+                            </div>
+                            <!-- name-rating ends here -->
+                            <div class="date fw-bold">
+                                January 29, 2024
+                            </div>
+                            <!-- date ends here -->
+                            <div class="text">
+                                Great product! I've been taking these tablets for a while, and I can really tell the difference. My colds are less frequent, and I feel healthier overall.
+                            </div>
+                            <!-- text ends here -->
+                        </div>
+                        <!-- card ends here -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-50 m-3 p-3">
+                            <div class="name-rating d-flex justify-content-between">
+                            <div class="name fw-bold">
+                                Jordan Lee
+                            </div>
+                            <div class="rating">
+                                <span class="material-icons text-warning">star</span>
+                                4.2
+                            </div>
+                            </div>
+                            <!-- name-rating ends here -->
+                            <div class="date fw-bold">
+                                April 22, 2024
+                            </div>
+                            <!-- date ends here -->
+                            <div class="text">
+                                Nature's Best Vitamin C has been a game changer for me! I've noticed a significant improvement in my overall health since I started taking it. Highly recommend it to anyone looking to boost their immune system.
+                            </div>
+                            <!-- text ends here -->
+                        </div>
+                        <!-- card ends here -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card w-50 m-3 p-3">
+                            <div class="name-rating d-flex justify-content-between">
+                            <div class="name fw-bold">
+                                Liam Thompson
+                            </div>
+                            <div class="rating">
+                                <span class="material-icons text-warning">star</span>
+                                4.7
+                            </div>
+                            </div>
+                            <!-- name-rating ends here -->
+                            <div class="date fw-bold">
+                                June 10, 2024
+                            </div>
+                            <!-- date ends here -->
+                            <div class="text">
+                                I've been using Nature's Best Vitamin C for a few months now, and I feel more energetic and healthy. It's become a staple in my daily routine, and I highly recommend it for anyone looking to boost their immunity!
+                            </div>
+                            <!-- text ends here -->
+                        </div>
+                        <!-- card ends here -->
+                    </div>
+                </div>
             </div>
-            
-             <!-- details-section ends here -->
-         </div>
-         <!-- cart-information ends here -->
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev " type="button" data-bs-target="#demo" data-bs-slide="prev" >
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
     </div>
-    <!-- row ends here -->
- </div>
- <!-- cart-section ends here -->
+    <!-- review-section ends here -->
 
- <!-- images-card starts from here -->
- <div class="images-card image-background ">
-    <div class="container d-flex justify-content-center">
-        <div class="image m-3">
-            <a href="">
-                <img src="Images/image 46.png" alt="vegan friendly">
-            </a>
-        </div>
-        <div class="image m-3">
-            <a href="">
-                <img src="Images/image 47.png" alt="vegan friendly">
-            </a>
-        </div>
-        <div class="image m-3">
-            <a href="">
-                <img src="Images/image 48.png" alt="vegan friendly">
-            </a>
-        </div>
-        <div class="image m-3">
-            <a href="">
-                <img src="Images/image 49.png" alt="vegan friendly">
-            </a>
-        </div>
+    <div class="leaf-section">
+        <img src="Images/leaf.png" alt="">
     </div>
-    <!-- container ends here -->
- </div>
- <!-- images-card ends from here -->
 
- <!--review-section starts from here -->
- <div class="review-section mb-3">
-    <div id="demo" class="carousel" data-bs-ride="carousel">
-        <!-- The slideshow/carousel -->
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center">
-                    <div class="card w-50 m-3 p-3">
-                        <div class="name-rating d-flex justify-content-between">
-                        <div class="name fw-bold">
-                            Aspen Siphron
-                        </div>
-                        <div class="rating">
-                            <span class="material-icons text-warning">star</span>
-                            4.7
-                        </div>
-                        </div>
-                        <!-- name-rating ends here -->
-                        <div class="date fw-bold">
-                            May 12, 2024
-                        </div>
-                        <!-- date ends here -->
-                        <div class="text">
-                            I've been using Nature's Best Vitamin C 1000 mg tablets for six months, and the results are fantastic. My immune system feels stronger—I haven't had a single cold this flu season. I've also noticed a boost in my energy levels throughout the day.
-                        </div>
-                        <!-- text ends here -->
-                    </div>
-                    <!-- card ends here -->
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <div class="card w-50 m-3 p-3">
-                        <div class="name-rating d-flex justify-content-between">
-                        <div class="name fw-bold">
-                            Maya Johnson
-                        </div>
-                        <div class="rating">
-                            <span class="material-icons text-warning">star</span>
-                            4.4
-                        </div>
-                        </div>
-                        <!-- name-rating ends here -->
-                        <div class="date fw-bold">
-                            March 5, 2024
-                        </div>
-                        <!-- date ends here -->
-                        <div class="text">
-                            I've been using this Vitamin C supplement for a few months now, and I feel great! My energy levels are up, and I feel less fatigued during the day. It's definitely worth the investment.
-                        </div>
-                        <!-- text ends here -->
-                    </div>
-                    <!-- card ends here -->
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <div class="card w-50 m-3 p-3">
-                        <div class="name-rating d-flex justify-content-between">
-                        <div class="name fw-bold">
-                            Sophia Davis
-                        </div>
-                        <div class="rating">
-                            <span class="material-icons text-warning">star</span>
-                            4.5
-                        </div>
-                        </div>
-                        <!-- name-rating ends here -->
-                        <div class="date fw-bold">
-                            January 29, 2024
-                        </div>
-                        <!-- date ends here -->
-                        <div class="text">
-                            Great product! I've been taking these tablets for a while, and I can really tell the difference. My colds are less frequent, and I feel healthier overall.
-                        </div>
-                        <!-- text ends here -->
-                    </div>
-                    <!-- card ends here -->
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <div class="card w-50 m-3 p-3">
-                        <div class="name-rating d-flex justify-content-between">
-                        <div class="name fw-bold">
-                            Jordan Lee
-                        </div>
-                        <div class="rating">
-                            <span class="material-icons text-warning">star</span>
-                            4.2
-                        </div>
-                        </div>
-                        <!-- name-rating ends here -->
-                        <div class="date fw-bold">
-                            April 22, 2024
-                        </div>
-                        <!-- date ends here -->
-                        <div class="text">
-                            Nature's Best Vitamin C has been a game changer for me! I've noticed a significant improvement in my overall health since I started taking it. Highly recommend it to anyone looking to boost their immune system.
-                        </div>
-                        <!-- text ends here -->
-                    </div>
-                    <!-- card ends here -->
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                    <div class="card w-50 m-3 p-3">
-                        <div class="name-rating d-flex justify-content-between">
-                        <div class="name fw-bold">
-                            Liam Thompson
-                        </div>
-                        <div class="rating">
-                            <span class="material-icons text-warning">star</span>
-                            4.7
-                        </div>
-                        </div>
-                        <!-- name-rating ends here -->
-                        <div class="date fw-bold">
-                            June 10, 2024
-                        </div>
-                        <!-- date ends here -->
-                        <div class="text">
-                            I've been using Nature's Best Vitamin C for a few months now, and I feel more energetic and healthy. It's become a staple in my daily routine, and I highly recommend it for anyone looking to boost their immunity!
-                        </div>
-                        <!-- text ends here -->
-                    </div>
-                    <!-- card ends here -->
-                </div>
-            </div>
-        </div>
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev " type="button" data-bs-target="#demo" data-bs-slide="prev" >
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
- </div>
- <!-- review-section ends here -->
-
- <!-- question-section starts from here -->
- <div class="question-section container mb-5">
+    <!-- question-section starts from here -->
+    <div class="question-section container mb-5">
         <div class="header">
             Want to know more ?
         </div>
+        <!-- header ends here -->
         <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
-                   
                         <h2 class="accordion-header" id="panelsStayOpen-headingone">
                             <button class="accordion-button collapsed position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseone" aria-expanded="false" aria-controls="panelsStayOpen-collapseone" onclick="accordion(this)">
                                 01. Is it safe? 
@@ -515,6 +563,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- accordion-item ends here -->
                 <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" onclick="accordion(this)">
@@ -524,14 +573,14 @@
                                     <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
                                </div>          
                             </button>
-                        </h2>
-                        
+                        </h2>  
                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                         <div class="accordion-body">
                             Vitamin C is crucial for collagen synthesis, helping stabilize and strengthen collagen by hydroxylating amino acids, which supports healthy connective tissues and wound healing.
                         </div>
                     </div>
                 </div>
+                <!-- accordion-item ends here -->
                 <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" onclick="accordion(this)">
@@ -548,6 +597,7 @@
                         </div>
                    </div>
                 </div>
+                <!-- accordion-item ends here -->
                 <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour" onclick="accordion(this)">
@@ -564,6 +614,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- accordion-item ends here -->
                 <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive" onclick="accordion(this)">
@@ -580,137 +631,135 @@
                         </div>
                     </div>
                 </div>
+                <!-- accordion-item ends here -->
         </div>
- </div>
- <!-- question-section ends here -->
- 
- <!-- stayconnected-section starts from here -->
- <div class="stayconnected-section mb-4">
-    <div class="background container">
-
-        <div class="leaf-section">
-            <img src="Images/leaf_1.png" alt="leaf">
-        </div>
-        <!-- leaf-section ends here -->
-
-        <div class="heading">   
-          <h1>Stay Connected, Stay Informed</h1>
-        </div>
-
-        <div class="paragraph mb-4">
-            Subscribe to receive exclusive updates, tips, and promotions straight to your inbox. <br>
-            Join our community for expert advice and resources to support your care journey.
-        </div>
-
-        <div class="form-setion d-flex justify-content-center position-relative">
-            <div class="input-group mb-3 w-50">
-                <input type="email" class="form-control rounded-pill w-100 w-md-50" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <a href="#">
-                    <span class="input-group-text rounded-pill position-absolute end-0 bg-success" id="basic-addon2"><i class="material-icons text-white">call_made</i></span>
-                </a>
-            </div>
-        </div>
-        <!-- from-section ends here -->
-        <div class="orange-section">
-            <img src="Images/Orange.png" alt="orange">
-        </div>
-        <!-- orange-section ends here -->
-
+        <!-- accordion ends here -->
     </div>
-    <!-- background ends here -->
- </div>
- <!-- stayconnected-section ends here -->
+    <!-- question-section ends here -->
 
- <!-- footer class starts from here -->
- <div class="footer ">
-    <div class="footer-inside container">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-sm-3">
-                    <div class="vitc-logo mb-4">
-                        <a href="">
-                            <img src="Images/Vector.png" alt="logo">
-                        </a>
+    <!-- stayconnected-section starts from here -->
+    <div class="stayconnected-section mb-5">
+        <div class="background container">
+            <div class="leaf-section">
+                <img src="Images/leaf_1.png" alt="leaf">
+            </div>
+            <!-- leaf-section ends here -->
+            <div class="heading">   
+            <h1>Stay Connected, Stay Informed</h1>
+            </div>
+            <!-- heading ends here -->
+            <div class="paragraph mb-4">
+                Subscribe to receive exclusive updates, tips, and promotions straight to your inbox. <br>
+                Join our community for expert advice and resources to support your care journey.
+            </div>
+            <!-- paragraph ends here -->
+            <div class="form-setion d-flex justify-content-center position-relative ">
+                <div class="input-group mb-3 w-auto">
+                    <input type="email" class="form-control rounded-pill px-4 py-2" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span role="button" class="input-group-text rounded-pill p-2 position-absolute end-0 bg-success" id="basic-addon2"><i class="material-icons text-white">call_made</i></span>
+                </div>
+            </div>
+            <!-- from-section ends here -->
+            <div class="orange-section">
+                <img src="Images/Orange.png" alt="orange">
+            </div>
+            <!-- orange-section ends here -->
+        </div>
+        <!-- background ends here -->
+    </div>
+    <!-- stayconnected-section ends here -->
+
+    <!-- footer class starts from here -->
+    <div class="footer">
+        <div class="footer-inside container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-sm-3">
+                        <div class="vitc-logo mb-4">
+                            <a href="">
+                                <img src="Images/Vector.png" alt="logo">
+                            </a>
+                        </div>
+                        <!-- vitc-logo ends here -->
+                        <div class="vitc-links justify-content-center ">
+                                <span role="button">
+                                    <img src="Images/Icon/facebook.png" alt="facebook">
+                                </span>
+                                <span role="button">
+                                    <img src="Images/Icon/linkedin.png" alt="linkedin">
+                                </span>
+                                <span role="button">
+                                    <img src="Images/Icon/x.png" alt="x">
+                                </span>
+                                <span role="button">
+                                    <img src="Images/Icon/instagram.png" alt="instagram">
+                                </span>   
+                        </div>
+                        <!-- vitc-links ends here -->
+                </div>
+                <!-- col ends here -->
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-sm-3">
+                    <div class="heading">
+                        Customer care
                     </div>
-                    <!-- vitc-logo ends here -->
-                    <div class="vitc-links justify-content-center ">
-                            <a href="">
-                                <img src="Images/Icon/facebook.png" alt="facebook">
-                            </a>
-                            <a href="">
-                                <img src="Images/Icon/linkedin.png" alt="linkedin">
-                            </a>
-                            <a href="">
-                                <img src="Images/Icon/x.png" alt="x">
-                            </a>
-                            <a href="">
-                                <img src="Images/Icon/instagram.png" alt="instagram">
-                            </a>   
+                    <!-- heading -->
+                    <div class="links p-1">
+                        <a href="">Our Story</a>
                     </div>
+                    <div class="links p-1">
+                        <a href="">Contact Us</a>
+                    </div>
+                    <div class="links p-1">
+                        <a href="">Track Order</a>
+                    </div> 
                     <!-- vitc-links ends here -->
+                </div>
+                <!-- col ends here -->
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-sm-3">
+                    <div class="heading">
+                        Our policies 
+                    </div>
+                    <!-- heading -->
+                    <div class="links p-1">
+                        <a href="">Privacy Policy</a>
+                    </div>
+                    <div class="links p-1">
+                        <a href="">Refund Policy</a>
+                    </div> 
+                    <div class="links p-1">
+                        <a href="">Terms Of Service</a>
+                    </div> 
+                    <!-- vitc-links ends here -->
+                </div>
+                <!-- col ends here -->
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-sm-3">
+                    <div class="heading">
+                        Contact us
+                    </div>
+                    <!-- heading -->
+                    <div class="links p-1">
+                        <a href="tel:569-852-1235">569-852-1235</a>
+                    </div>
+                    <div class="links p-1">
+                        <a href="">Vitc@.com</a>
+                    </div>
+                    <div class="links p-1">
+                        <a href="">Vitc@.com</a>
+                    </div> 
+                    <!-- vitc-links ends here -->
+                </div>
+                <!-- col ends here -->
             </div>
-            <!-- col ends here -->
-            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-sm-3">
-                <div class="heading">
-                    Customer care
-                </div>
-                <!-- heading -->
-                <div class="links">
-                    <a href="">Our Story</a>
-                </div>
-                 <div class="links">
-                    <a href="">Contact Us</a>
-                 </div>
-                <div class="links">
-                    <a href="">Track Order</a>
-                </div> 
-                <!-- vitc-links ends here -->
-            </div>
-            <!-- col ends here -->
-    
-            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-sm-3">
-                <div class="heading">
-                    Our policies 
-                </div>
-                <!-- heading -->
-                <div class="links">
-                    <a href="">Privacy Policy</a>
-                </div>
-                <div class="links">
-                    <a href="">Refund Policy</a>
-                </div> 
-                <div class="links">
-                    <a href="">Terms Of Service</a>
-                </div> 
-                <!-- vitc-links ends here -->
-            </div>
-            <!-- col ends here -->
-            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-sm-3">
-                <div class="heading">
-                    Contact us
-                </div>
-                <!-- heading -->
-                <div class="links">
-                    <a href="tel:569-852-1235">569-852-1235</a>
-                </div>
-                <div class="links">
-                    <a href="">Vitc@.com</a>
-                </div>
-                <div class="links">
-                    <a href="">Vitc@.com</a>
-                </div> 
-                <!-- vitc-links ends here -->
-            </div>
-            <!-- col ends here -->
+            <!-- row ends here -->
         </div>
-        <!-- row ends here -->
+        <!-- footer-inside ends here -->
+        
     </div>
-    <!-- footer-inside ends here -->
- </div>
- <!-- footer class ends here -->
+    <!-- footer class ends here -->
 
- <!-- Bootstrap script here -->
- <script src="index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap script here -->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html> 

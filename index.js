@@ -1,5 +1,3 @@
-console.log("Js File has been added");
-
 var increase = document.getElementById("increase");
 var decrease = document.getElementById("decrease");
 var quantity = document.getElementById('quantity');
@@ -26,7 +24,7 @@ decrease.addEventListener('click',function(){
 
 // WhishList button work
 wishList.addEventListener('click',function(){
-  wishList.classList.toggle('black-color');
+  wishList.classList.toggle('red-color');
 });
 
 // readmore on click option
@@ -46,35 +44,41 @@ function readMore() {
   }
 }
 
+// select Flavour function
 function selectFlavour(element){
-  var imagesAll = document.querySelectorAll(".flavour img");
-  for (var i = 0; i < imagesAll.length; i++) {
-    imagesAll[i].style.border = "none"; 
-    imagesAll[i].style.background = "none"; 
+  var allFlavours = document.querySelectorAll(".flavour");
+  for (var i = 0; i < allFlavours.length; i++) {
+    allFlavours[i].style.border = "none"; 
+    allFlavours[i].style.background = "none"; 
   }
-   var image = element.querySelector("img");
-   image.style.border = "2px solid black";
-   image.style.background = "#c0c2c4";
+   element.style.border = "1px solid green ";
+   element.style.background = "#c0c2c4";
+   element.style.borderRadius = "10px"
 
-   var flavour = image.className; 
-   var flavourHeading = document.querySelector('.head'); 
-   flavourHeading.textContent = flavour;
+   var image = element.querySelector("img");
+  var flavour = image.alt; 
+  var flavourHeading = document.querySelector('.flavour_head');
+  flavourHeading.textContent = flavour;
 }
 
+// select Image function
 function selectImage(element){
-  var imagesAll = document.querySelectorAll(".selected img");
-  for (var i = 0; i < imagesAll.length; i++) {
-    imagesAll[i].style.border = "none"; 
-    imagesAll[i].style.background = "none"; 
+  var cards = document.querySelectorAll(".selected");
+  for (var i = 0; i < cards.length; i++) {
+    cards[i].style.border = "none"; 
+    cards[i].style.background = "none"; 
   }
-   var image = element.querySelector("img");
-   image.style.border = "2px solid black";
-   image.style.background = "#c0c2c4";
+  element.style.border = "1px solid green";
+  element.style.background = "#c0c2c4";
+  element.style.borderRadius = "10px";
 
-   var selectImage = document.querySelector("#image-select");
-   selectImage.src = image.src;
+  var img = element.querySelector("img");
+  var selectImage = document.querySelector("#image-select");
+  selectImage.src = img.src;
+
 }
 
+// Accordion function
 function accordion(element) {
   var plus = element.querySelector('.add'); 
   var minus = element.querySelector('.remove');
@@ -88,6 +92,7 @@ function accordion(element) {
   }
 }
 
+//icon function 
 icon.addEventListener('click', () => {
   var downArrow = document.querySelector('.down-arrow');
   var upArrow = document.querySelector('.up-arrow');
@@ -99,3 +104,9 @@ icon.addEventListener('click', () => {
     downArrow.style.display = 'inline'; 
   } 
 });
+
+
+function fixIcon() {
+  const icon = document.getElementById('icon');
+  icon.classList.toggle('fixed-icon'); 
+}
