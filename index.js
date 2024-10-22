@@ -52,7 +52,7 @@ function selectFlavour(element){
     allFlavours[i].style.background = "none"; 
   }
    element.style.border = "1px solid green ";
-   element.style.background = "#c0c2c4";
+   element.style.backgroundColor = "red";
    element.style.borderRadius = "10px"
 
    var image = element.querySelector("img");
@@ -69,7 +69,7 @@ function selectImage(element){
     cards[i].style.background = "none"; 
   }
   element.style.border = "1px solid green";
-  element.style.background = "#c0c2c4";
+  element.style.background = "#808284";
   element.style.borderRadius = "10px";
 
   var img = element.querySelector("img");

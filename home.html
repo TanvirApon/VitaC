@@ -68,20 +68,19 @@
     <!-- navbar-section ends here -->
 
     <!-- cart-section starts from here -->
-    <div class="cart-section d-flex justify-content-center mb-5 container">
-        <div class="row">
+    <div class="cart-section d-flex justify-content-center mb-5">
+        <div class="row  container">
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 cart-picture">
                 <div class="main-image d-flex justify-content-center mb-4 p-4">
                 <img id="image-select" src="Images/image37_1.png" alt="main-image">
                 </div>
                 <!-- main-image ends here -->
                 <div class="sub-image">
-                    <div class="carousel-inner d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
                         <button class=" btn m-2" id="left-side"><i class="material-icons">arrow_back</i></button>
-                       
                         <div class="image-container d-flex justify-content-between">
                             <!-- First set of images (1-4) -->
-                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                            <div class="card w-25 m-1 bg-light p-2 selected" id="default" onclick="selectImage(this)">
                                 <span role="button">
                                     <img src="Images/image37_1.png" class="card-img-top" alt="Image 1">
                                 </span>
@@ -171,7 +170,7 @@
                     $ 40.99
                 </div>
                 <!-- price ends here -->
-                <hr>
+                <hr class="m-3">
                 <div class="info m-3">
                     Vitamin C, also known as ascorbic acid, is an essential nutrient that supports numerous bodily functions.
                     It is crucial for maintaining healthy skin, blood vessels, bones, and cartilage, primarily due to its role in collagen synthesis.<span id="dots">...</span>
@@ -186,7 +185,7 @@
             
                 </div>
                 <!-- info ends here -->
-                <hr>
+                <hr class="m-3">
                 <div class="flavour-section d-flex justify-content-start m-2">
                         <div class="heading m-2">
                         <h3 class="fw-bold">Flavour</h3>
@@ -213,7 +212,7 @@
                         <!-- image-section ends here -->
                 </div>
                 <!-- flavour-section ends here -->
-                <hr>
+                <hr class="m-3">
                 <div class="item-add"> 
                         <div class="row">
                                 <div class="col-6 col-6 col-md-4 col-lg-4 col-xl-4 dropdown w-auto m-2">
@@ -237,8 +236,9 @@
                                     </div>
                                     <!-- cart-add ends here -->  
 
-                                <div class="col-12 col-6 col-md-4 col-lg-4 col-xl-4 cart-button border-none m-2 p-sm-">
-                                    <button class="btn bg-success btn-lg  rounded-pill text-white w-100 p-1">Add to Cart</button>
+                                <div class="col-12 col-6 col-md-4 col-lg-4 col-xl-4  rounded-pill border-none m-2 p-sm-">
+                                    <button type="button" class="btn btn-lg  rounded-pill text-white w-100 p-1 cart-button">Add to Cart</button>
+                                    <!-- <button class="btn btn-lg  rounded-pill text-white w-100 p-1 cart-button">Add to Cart</button> -->
                                 </div>
                                 <!-- cart-button ends here -->
                         </div>
@@ -259,13 +259,13 @@
                 <!-- Wishlist ends here -->
             
                 <!-- details-section starts from here -->
-                <nav>
+                <nav class="m-3">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Details</button>
                     <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Shipping</button>
                     </div>
                 </nav>
-                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-content m-3" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
@@ -356,30 +356,26 @@
         <!-- row ends here -->
     </div>
     <!-- cart-section ends here -->
-   
-    <div class="shape-section">
-        <img src="Images/Shape.png" alt="">
-    </div>
-     <!-- shape-section ends here -->
+
     <!-- images-card starts from here -->
     <div class="images-card image-background mb-5">
         <div class="container d-flex justify-content-center">
-            <div class="image m-3">
+            <div class="image m-4">
                 <a href="">
                     <img src="Images/image 46.png" alt="vegan friendly">
                 </a>
             </div>
-            <div class="image m-3">
+            <div class="image m-4">
                 <a href="">
                     <img src="Images/image 47.png" alt="vegan friendly">
                 </a>
             </div>
-            <div class="image m-3">
+            <div class="image m-4">
                 <a href="">
                     <img src="Images/image 48.png" alt="vegan friendly">
                 </a>
             </div>
-            <div class="image m-3">
+            <div class="image m-4">
                 <a href="">
                     <img src="Images/image 49.png" alt="vegan friendly">
                 </a>
@@ -390,11 +386,11 @@
     <!-- images-card ends from here -->
 
     <!--review-section starts from here -->
-    <div class="review-section mb-5">
+    <div class="review-section mb-5 position-relative">
         <div class="header">
             Reviews & Rating
         </div>
-        
+        <!-- header section ends here -->
         <div id="demo" class="carousel" data-bs-ride="carousel">
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
@@ -535,108 +531,107 @@
     </div>
     <!-- review-section ends here -->
 
-    <div class="leaf-section">
-        <img src="Images/leaf.png" alt="">
-    </div>
-
-    <!-- question-section starts from here -->
-    <div class="question-section container mb-5">
-        <div class="header">
-            Want to know more ?
-        </div>
-        <!-- header ends here -->
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingone">
-                            <button class="accordion-button collapsed position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseone" aria-expanded="false" aria-controls="panelsStayOpen-collapseone" onclick="accordion(this)">
-                                01. Is it safe? 
-                                <div class="btn position-absolute end-0" >
-                                    <i class="material-icons text-success add">add_circle</i> 
-                                    <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                               </div>           
-                            </button>
-                        </h2>
-                      
-                    <div id="panelsStayOpen-collapseone" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingone">
-                        <div class="accordion-body">
-                            Yes, it is a completely safe and FSSAI-approved product.
+    <div class="question-leaf">
+        <!-- question-section starts from here -->
+        <div class="question-section container mb-5"> 
+            <div class="header">
+                Want to know more ?
+            </div>
+            <!-- header ends here -->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingone">
+                                <button class="accordion-button collapsed position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseone" aria-expanded="false" aria-controls="panelsStayOpen-collapseone" onclick="accordion(this)">
+                                    01. Is it safe? 
+                                    <div class="btn position-absolute end-0" >
+                                        <i class="material-icons text-success add">add_circle</i> 
+                                        <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
+                                </div>           
+                                </button>
+                            </h2>
+                        
+                        <div id="panelsStayOpen-collapseone" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingone">
+                            <div class="accordion-body">
+                                Yes, it is a completely safe and FSSAI-approved product.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- accordion-item ends here -->
-                <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" onclick="accordion(this)">
-                                02. What is the role of Vitamin C in collagen synthesis ?
-                                <div class="btn position-absolute end-0" >
-                                    <i class="material-icons text-success add">add_circle</i> 
-                                    <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                               </div>          
-                            </button>
-                        </h2>  
-                   <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">
-                            Vitamin C is crucial for collagen synthesis, helping stabilize and strengthen collagen by hydroxylating amino acids, which supports healthy connective tissues and wound healing.
+                    <!-- accordion-item ends here -->
+                    <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" onclick="accordion(this)">
+                                    02. What is the role of Vitamin C in collagen synthesis ?
+                                    <div class="btn position-absolute end-0" >
+                                        <i class="material-icons text-success add">add_circle</i> 
+                                        <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
+                                </div>          
+                                </button>
+                            </h2>  
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                Vitamin C is crucial for collagen synthesis, helping stabilize and strengthen collagen by hydroxylating amino acids, which supports healthy connective tissues and wound healing.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- accordion-item ends here -->
-                <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" onclick="accordion(this)">
-                                03. How much Vitamin C is needed by the body ?
+                    <!-- accordion-item ends here -->
+                    <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" onclick="accordion(this)">
+                                    03. How much Vitamin C is needed by the body ?
+                                    <div class="btn d-flex justify-content-end position-absolute end-0" >
+                                        <i class="material-icons text-success add">add_circle</i> 
+                                        <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
+                                </div>          
+                                </button>
+                            </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                The recommended daily amount for adults is 65-90 mg, with an upper limit of 2,000 mg per day to avoid potential side effects.
+                            </div>
+                    </div>
+                    </div>
+                    <!-- accordion-item ends here -->
+                    <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour" onclick="accordion(this)">
+                                04. How do I know that I need Vitamin C ?
                                 <div class="btn d-flex justify-content-end position-absolute end-0" >
                                     <i class="material-icons text-success add">add_circle</i> 
                                     <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                               </div>          
+                            </div>          
                             </button>
-                        </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                            The recommended daily amount for adults is 65-90 mg, with an upper limit of 2,000 mg per day to avoid potential side effects.
-                        </div>
-                   </div>
-                </div>
-                <!-- accordion-item ends here -->
-                <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour" onclick="accordion(this)">
-                            04. How do I know that I need Vitamin C ?
-                            <div class="btn d-flex justify-content-end position-absolute end-0" >
-                                <i class="material-icons text-success add">add_circle</i> 
-                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                           </div>          
-                        </button>
-                        </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                            You might need Vitamin C if you experience frequent fatigue, slow wound healing, or weakened immunity. Blood tests can confirm deficiency.
+                            </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                You might need Vitamin C if you experience frequent fatigue, slow wound healing, or weakened immunity. Blood tests can confirm deficiency.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- accordion-item ends here -->
-                <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive" onclick="accordion(this)">
-                                05. What symptoms indicate Vitamin C deficiency ?
-                                <div class="btn d-flex justify-content-end position-absolute end-0" >
-                                    <i class="material-icons text-success add">add_circle</i> 
-                                    <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                               </div>          
-                            </button>
-                        </h2>
-                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                            You might need Vitamin C if you experience frequent fatigue, slow wound healing, or weakened immunity. Blood tests can confirm deficiency.
+                    <!-- accordion-item ends here -->
+                    <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive" onclick="accordion(this)">
+                                    05. What symptoms indicate Vitamin C deficiency ?
+                                    <div class="btn d-flex justify-content-end position-absolute end-0" >
+                                        <i class="material-icons text-success add">add_circle</i> 
+                                        <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
+                                </div>          
+                                </button>
+                            </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                You might need Vitamin C if you experience frequent fatigue, slow wound healing, or weakened immunity. Blood tests can confirm deficiency.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- accordion-item ends here -->
+                    <!-- accordion-item ends here -->
+            </div>
+            <!-- accordion ends here -->
         </div>
-        <!-- accordion ends here -->
+        <!-- question-section ends here -->
     </div>
-    <!-- question-section ends here -->
-
+    <!-- question-leaf ends here -->
+   
     <!-- stayconnected-section starts from here -->
     <div class="stayconnected-section mb-5">
         <div class="background container">

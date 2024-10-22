@@ -41,14 +41,28 @@ body {
 .accordion-button:focus{
     box-shadow:none;
 }
-.btn:hover {
-    outline: none;
-    border: none;
-}
 .heading{
     font-size: 20px;
     font-weight: bold;
 }
+.cart-section{
+    background-image: url('Images/Shape.png');
+    background-repeat: no-repeat;
+    background-position: left bottom; 
+}
+.cart-button{
+    background-color:  #1A432E;
+}
+.cart-button:hover{
+    background-color:  #1A432E;
+}
+.flavour{
+    border-radius: 10px;
+}
+.selected{
+    border-radius: 10px;
+}
+
 /* #wishlist_icon{
     color:white;
 } */
@@ -78,7 +92,7 @@ a{
     font-size: 18px;
 }
 .price{
-    color: #2B6A4A;
+    color:#41a935;
     font-size: 30px;
     font-weight: bold;
 }
@@ -111,7 +125,12 @@ a{
     background-color: #f7e9db;
     border-radius: 25px;
 }
+.question-leaf{
+    background-image: url('Images/leaf.png');
+    background-repeat: no-repeat;
+    background-position: top right;
 
+}
 /* for desktop device */
 @media (min-width: 1024px) {
 
@@ -135,15 +154,10 @@ a{
     top: 110%;
     left: 0%;
 }
-.leaf-section{
-    position: absolute;
-    top: 250%;
-    right: 0%;
-}
+
 /* question-section starts here */
 .question-section{
     width: 650px;
-    margin-bottom: 50px; 
 }
 .question-section .accordion .accordion-header .accordion-button{
     font-size: 20px;
