@@ -107,14 +107,15 @@ a{
     margin-top: 150px;
 }
 
-/* for desktop device */
-@media (min-width: 1024px) {
-
-/* cart-section starts from here */
 .main-image{
     background-color: #f7e9db;
     border-radius: 25px;
 }
+
+/* for desktop device */
+@media (min-width: 1024px) {
+
+/* cart-section starts from here */
 .selected img{
     padding: 5px;
 }
@@ -213,6 +214,12 @@ a{
     }
     .email-input {
         width: 100%;
+    }
+    .shape-section{
+       display: none;
+    }
+    .leaf-section{
+        display: none;
     }
     /* images-card starts here */
     .image-background{

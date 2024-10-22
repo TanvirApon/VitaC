@@ -106,7 +106,4 @@ icon.addEventListener('click', () => {
 });
 
 
-function fixIcon() {
-  const icon = document.getElementById('icon');
-  icon.classList.toggle('fixed-icon'); 
-}
+
