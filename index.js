@@ -3,6 +3,8 @@ var decrease = document.getElementById("decrease");
 var quantity = document.getElementById('quantity');
 var wishList = document.querySelector("#wishlist_icon i");
 var icon = document.querySelector(".form-select");
+var leftSide = document.getElementById("left-side");
+var rightSide = document.getElementById("right-side");
 
 // increase button
 increase.addEventListener('click',function(){
@@ -104,6 +106,60 @@ icon.addEventListener('click', () => {
     downArrow.style.display = 'inline'; 
   } 
 });
+
+
+
+//sub-image change
+var slideIndex = 1;
+showImage(slideIndex);
+
+function plusImage(n) {
+  showImage(slideIndex += n);
+}
+
+function showImage(n) {
+  var image = document.getElementsByClassName("image-container");
+  var leftButton = document.getElementById("left-side");
+  var rightButton = document.getElementById("right-side");
+
+  if (n > image.length) { 
+    slideIndex = image.length;
+  }
+  
+  if (n < 1) {
+    slideIndex = 1;
+  }
+  
+  for (let i = 0; i < image.length; i++) {
+    image[i].classList.add("d-none");
+  }
+  image[slideIndex - 1].classList.remove("d-none");
+
+  if(slideIndex === 1){
+    leftButton.style.display = "none";
+    rightButton.style.display = "inline";
+  }
+  else if (slideIndex === image.length){
+    leftButton.style.display = "inline";
+    rightButton.style.display = "none";
+  }
+  else{
+    leftButton.style.display = "inline";
+    rightButton.style.display = "inline";
+  }
+}
+
+//left-side button
+leftSide.addEventListener("click", function() {
+  plusImage(-1);
+});
+
+//right-side button
+rightSide.addEventListener("click", function() {
+  plusImage(1);
+});
+
+
 
 
 

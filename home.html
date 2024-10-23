@@ -21,7 +21,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-sm-2">
                 <li class="nav-item">
                     <a class="nav-link active fw-bold" aria-current="page" href="#">HOME</a>
                 </li>
@@ -41,7 +41,7 @@
                 <form class="d-flex justify-content-around">
                     <div class="search mx-2 w-100"> 
                         <div class="input-group">
-                            <input type="email" class="form-control search-form rounded-pill px-2 search_bar" placeholder="Search Product" aria-label="" aria-describedby="basic-addon2">
+                            <input type="email" class="form-control search-form rounded-pill search_bar" placeholder="Search Product" aria-label="" aria-describedby="basic-addon2">
                             <a href="#">
                                 <span class="input-group-text rounded-pill position-absolute start-0 bg-light" id="basic-addon2">
                                     <i class="material-icons">search</i>
@@ -68,7 +68,8 @@
     <!-- navbar-section ends here -->
 
     <!-- cart-section starts from here -->
-    <div class="cart-section d-flex justify-content-center mb-5">
+     <div class="cart-leaf">
+        <div class="cart-section d-flex justify-content-center mb-5">
         <div class="row  container">
             <div class="col-12 col-md-12 col-lg-6 col-xl-6 cart-picture">
                 <div class="main-image d-flex justify-content-center mb-4 p-4">
@@ -101,31 +102,33 @@
                                 </span>
                             </div>
                         </div>
-                
-                        <div class="image-container d-none d-flex justify-content-between">
-                            <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
+                        
+                        <div class="image-container d-flex justify-content-between">
+                            <!-- First set of images (1-4) -->
+                            <div class="card w-25 m-1 bg-light p-2 selected" id="default" onclick="selectImage(this)">
                                 <span role="button">
-                                    <img src="Images/image37_5.png" class="card-img-top" alt="Image 5">
+                                    <img src="Images/image37_5.png" class="card-img-top" alt="Image 1">
                                 </span>
                             </div>
                             <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
                                 <span role="button">
-                                    <img src="Images/image37_6.png" class="card-img-top" alt="Image 6">
+                                    <img src="Images/image37_6.png" class="card-img-top" alt="Image 2">
                                 </span>
                             </div>
                             <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
                                 <span role="button">
-                                    <img src="Images/image37_7.png" class="card-img-top" alt="Image 7">
+                                    <img src="Images/image37_7.png" class="card-img-top" alt="Image 3">
                                 </span>
                             </div>
                             <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
                                 <span role="button">
-                                    <img src="Images/image37_8.png" class="card-img-top" alt="Image 8">
+                                    <img src="Images/image37_8.png" class="card-img-top" alt="Image 4">
                                 </span>
                             </div>
                         </div>
                 
-                        <div class="image-container d-none d-flex justify-content-between">
+                
+                        <div class="image-container d-none d-flex justify-content-start">
                             <div class="card w-25 m-1 bg-light p-2 selected" onclick="selectImage(this)">
                                 <span role="button">
                                     <img src="Images/image37_9.png" class="card-img-top" alt="Image 9">
@@ -343,12 +346,9 @@
                                 <div class="accordion-body text-secondary">At VitC, we prioritize your convenience by providing efficient shipping options. Orders are typically dispatched within 1-3 business days. Enjoy peace of mind with our tracking service, allowing you to monitor your shipment every step of the way. We strive to offer competitive shipping rates and free shipping for orders above a specified threshold, ensuring that your health journey is as seamless as possible.</div>
                             </div>
                             </div>
-                    </div>
-                    
+                    </div>   
                 </div>
-                
-            
-                </div>  
+              </div>  
                 <!-- details-section ends here -->
             </div>
             <!-- cart-information ends here -->
@@ -356,6 +356,8 @@
         <!-- row ends here -->
     </div>
     <!-- cart-section ends here -->
+     </div>
+     <!-- cart-leaf ends here -->
 
     <!-- images-card starts from here -->
     <div class="images-card image-background mb-5">
@@ -648,10 +650,14 @@
                 Join our community for expert advice and resources to support your care journey.
             </div>
             <!-- paragraph ends here -->
-            <div class="form-setion d-flex justify-content-center position-relative ">
+            <div class="form-setion d-flex justify-content-center position-relative">
                 <div class="input-group mb-3 w-auto">
-                    <input type="email" class="form-control rounded-pill px-4 py-2" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span role="button" class="input-group-text rounded-pill p-2 position-absolute end-0 bg-success" id="basic-addon2"><i class="material-icons text-white">call_made</i></span>
+                        <input type="text" class="form-control rounded-pill px-4 py-2 position-relative" placeholder="Enter your email address" >
+                        <span class="input-group-text rounded-pill p-2 position-absolute end-0 bg-success" id="basic-addon2"><i class="material-icons text-white">call_made</i></span>        
+                    <!-- <input type="email" class="rounded-pill px-4 py-2" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span role="button" class="input-group-text rounded-pill p-2 position-absolute end-0 bg-success" id="basic-addon2">
+                        <i class="material-icons text-white">call_made</i>
+                    </span> -->
                 </div>
             </div>
             <!-- from-section ends here -->
@@ -750,7 +756,6 @@
         
     </div>
     <!-- footer class ends here -->
-
 
     <!-- Bootstrap script here -->
     <script src="index.js"></script>
