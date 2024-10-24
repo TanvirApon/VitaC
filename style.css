@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Roboto';
-    src: url('font/Roboto-Light.ttf');
+    src: url('font/Roboto-Black.ttf');
 }            
 body {  
     margin: 0;
@@ -66,8 +66,6 @@ body {
     outline: none;
     border: none;
 }
-
-
 /* #wishlist_icon{
     color:white;
 } */
@@ -125,7 +123,6 @@ a{
 .footer-inside .row{
     margin-top: 150px;
 }
-
 .main-image{
     background-color: #f7e9db;
     border-radius: 25px;
@@ -134,13 +131,28 @@ a{
     background-image: url('Images/leaf.png');
     background-repeat: no-repeat;
     background-position: top right;
-
 }
-
-
+/* Rounded pill classes for horizontal sides */
+.rounded-pill-left {
+    border-top-left-radius: 50rem !important;
+    border-bottom-left-radius: 50rem !important;
+  }
+.rounded-pill-right {
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none; 
+}
+.form-control {
+    border-right: none; 
+}
+.search_bar{
+    border-left: none;
+}
 /* for desktop device */
 @media (min-width: 1024px) {
-
 /* cart-section starts from here */
 .selected img{
     padding: 5px;
@@ -149,19 +161,16 @@ a{
     padding:5px;
  }
 /* cart-section ends her */
-
 /* images-card starts here */
 .image-background{
     background-color: #E8EDEA;
 }
 /* images-card ends here */
-
 .shape-section{
     position: absolute;
     top: 110%;
     left: 0%;
 }
-
 /* question-section starts here */
 .question-section{
     width: 650px;
@@ -175,7 +184,6 @@ a{
     color: #888c89; 
 }
 /* question-section ends here */
-
 /* stayconnected-section starts from here */
 .stayconnected-section{
     text-align: center;
@@ -215,7 +223,6 @@ a{
 }
 /* stayconnected-section ends here */
 }
-
 /* for mobile device */
 @media (max-width: 768px) {
     .search_bar{
@@ -260,7 +267,6 @@ a{
         color: #888c89; 
     }
     /* question-section ends here */
-
     /* stayconnected-section starts from here */
     .stayconnected-section{
         text-align: center;
@@ -301,5 +307,5 @@ a{
     /* stayconnected-section ends here */
     .cart-leaf,.question-leaf {
         background-image: none;
-      }
+    }
 }

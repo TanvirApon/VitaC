@@ -41,12 +41,10 @@
                 <form class="d-flex justify-content-around">
                     <div class="search mx-2 w-100"> 
                         <div class="input-group">
-                            <input type="email" class="form-control search-form rounded-pill search_bar" placeholder="Search Product" aria-label="" aria-describedby="basic-addon2">
-                            <a href="#">
-                                <span class="input-group-text rounded-pill position-absolute start-0 bg-light" id="basic-addon2">
-                                    <i class="material-icons">search</i>
-                                </span>
-                            </a>
+                            <span role="button" class="input-group-text rounded-pill-left bg-light" id="basic-addon2">
+                                <i class="material-icons rounded-pill">search</i>
+                            </span>
+                            <input type="email" class="form-control search-form rounded-pill-right search_bar" placeholder="Search Product" aria-label="" aria-describedby="basic-addon2">
                         </div>
                     </div>
                 </form>  
@@ -664,14 +662,12 @@
                 Join our community for expert advice and resources to support your care journey.
             </div>
             <!-- paragraph ends here -->
-            <div class="form-setion d-flex justify-content-center position-relative">
+            <div class="form-setion d-flex justify-content-center">
                 <div class="input-group mb-3 w-auto">
-                        <input type="text" class="form-control rounded-pill px-4 py-2 position-relative" placeholder="Enter your email address" >
-                        <span class="input-group-text rounded-pill p-2 position-absolute end-0 bg-success" id="basic-addon2"><i class="material-icons text-white">call_made</i></span>        
-                    <!-- <input type="email" class="rounded-pill px-4 py-2" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span role="button" class="input-group-text rounded-pill p-2 position-absolute end-0 bg-success" id="basic-addon2">
-                        <i class="material-icons text-white">call_made</i>
-                    </span> -->
+                        <input type="text" class="form-control rounded-pill-left" placeholder="Enter your email address" >
+                        <span role="button" class="input-group-text rounded-pill-right" id="basic-addon2">
+                            <i class="material-icons text-white rounded-pill p-2 bg-success">call_made</i>
+                        </span>        
                 </div>
             </div>
             <!-- from-section ends here -->
