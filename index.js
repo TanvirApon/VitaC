@@ -136,15 +136,15 @@ function showImage(n) {
   image[slideIndex - 1].classList.remove("d-none");
 
   if(slideIndex === 1){
-    leftButton.style.display = "none";
-    rightButton.style.display = "inline";
+    leftButton.style.visibility = "hidden";
+    rightButton.style.visibility = "visible";
   }
   else if (slideIndex === image.length){
-    leftButton.style.display = "inline";
-    rightButton.style.display = "none";
+    leftButton.style.visibility = "visible";
+    rightButton.style.visibility = "hidden";
   }
   else{
-    leftButton.style.display = "inline";
+    leftButton.style.visibility = "visible";
     rightButton.style.display = "inline";
   }
 }
