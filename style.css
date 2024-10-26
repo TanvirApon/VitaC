@@ -48,7 +48,7 @@ body {
 .cart-leaf{
     background-image: url('Images/Shape.png');
     background-repeat: no-repeat;
-    background-position: left bottom; 
+    background-position: left 600px; 
 }
 .cart-button{
     background-color:  #1A432E;
@@ -100,7 +100,7 @@ a{
     font-weight: bold;
 }
 .info{
-    font-size: 20px;
+    font-size: 17px;
 }
 .read {
     text-decoration: underline;
@@ -150,6 +150,27 @@ a{
 }
 .search_bar{
     border-left: none;
+}
+/* accordion border none */
+.accordion .accordion-item, 
+.accordion .accordion-header, 
+.accordion .accordion-body {
+    border: none;
+}
+.accordion .accordion-collapse.show .accordion-body {
+    border-bottom: 1px solid #dee2e6; 
+}
+.accordion-button:focus, 
+.accordion-button:active {
+    background-color: transparent !important; 
+    box-shadow: none; 
+}
+.extra {
+    background: none; 
+    border: none; 
+}
+.extra:focus {
+    outline: none; 
 }
 /* for desktop device */
 @media (min-width: 1024px) {
