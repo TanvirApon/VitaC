@@ -3,6 +3,8 @@ var decrease = document.getElementById("decrease");
 var quantity = document.getElementById('quantity');
 var wishList = document.querySelector("#wishlist_icon i");
 var icon = document.querySelector(".form-select");
+var downArrow = document.querySelector('.down-arrow');
+var upArrow = document.querySelector('.up-arrow');
 var leftSide = document.getElementById("left-side");
 var rightSide = document.getElementById("right-side");
 
@@ -52,10 +54,11 @@ function selectFlavour(element){
   for (var i = 0; i < allFlavours.length; i++) {
     allFlavours[i].style.border = "none"; 
     allFlavours[i].style.background = "none"; 
+    element.style.borderRadius = "0px";
   }
    element.style.border = "1px solid green ";
    element.style.backgroundColor = "red";
-   element.style.borderRadius = "10px"
+   element.style.borderRadius = "10px";
 
    var image = element.querySelector("img");
   var flavour = image.alt; 
@@ -95,18 +98,18 @@ function accordion(element) {
 }
 
 //icon function 
-icon.addEventListener('click', () => {
-  var downArrow = document.querySelector('.down-arrow');
-  var upArrow = document.querySelector('.up-arrow');
+function toggleDropdown() {
   if (downArrow.style.display !== 'none') {
-    downArrow.style.display = 'none';  
-    upArrow.style.display = 'inline'; 
+    downArrow.style.display = 'none';
+    upArrow.style.display = 'inline';
   } else {
-    upArrow.style.display = 'none';  
-    downArrow.style.display = 'inline'; 
-  } 
-});
-
+    upArrow.style.display = 'none';
+    downArrow.style.display = 'inline';
+  }
+}
+icon.addEventListener('click', toggleDropdown);
+downArrow.addEventListener('click', toggleDropdown);
+upArrow.addEventListener('click', toggleDropdown);
 
 
 //sub-image change
