@@ -180,6 +180,17 @@ a{
 .search-bar,.email-icon{
     background-color: white;
 }
+.search_bar:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #ced4da;
+}
+.email:focus{
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: white;
+}
+
 /* for desktop device */
 @media (min-width: 1024px) {
 /* cart-section starts from here */
@@ -273,7 +284,7 @@ a{
         font-weight: bold;
     }
     .info,.cart-information{
-        padding:20px;
+        padding:3px;
     }
     .image img {
         width: 100%; 
@@ -299,10 +310,12 @@ a{
     .question-section .accordion .accordion-header .accordion-button{
         font-size: 15px;
         font-weight: bold;
+        padding-left: 45px;
     }
     .question-section .accordion .accordion-collapse .accordion-body{
         font-size: 14px;
         color: #888c89; 
+        margin: 15px;
     }
     /* question-section ends here */
     /* stayconnected-section starts from here */
