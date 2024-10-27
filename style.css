@@ -13,6 +13,11 @@ body {
     background-color: transparent;
     outline: none;
 }
+.flavour {
+    box-sizing: border-box;        
+    border: 1px solid transparent; 
+    border-radius: 10px;    
+}
 #default{
     border: 1px solid green;
     border-radius: 10px;
@@ -48,7 +53,7 @@ body {
 .cart-leaf{
     background-image: url('Images/Shape.png');
     background-repeat: no-repeat;
-    background-position: left 600px; 
+    background-position: left 575px; 
 }
 .cart-button{
     background-color:  #1A432E;
@@ -171,6 +176,9 @@ a{
 }
 .extra:focus {
     outline: none; 
+}
+.search-bar,.email-icon{
+    background-color: white;
 }
 /* for desktop device */
 @media (min-width: 1024px) {

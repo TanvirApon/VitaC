@@ -41,7 +41,7 @@
                 <form class="d-flex justify-content-around">
                     <div class="search mx-2 w-100"> 
                         <div class="input-group">
-                            <span role="button" class="input-group-text rounded-pill-left bg-light" id="basic-addon2">
+                            <span role="button" class="input-group-text rounded-pill-left search-bar" id="basic-addon2">
                                 <i class="material-icons rounded-pill">search</i>
                             </span>
                             <input type="email" class="form-control search-form rounded-pill-right search_bar" placeholder="Search Product" aria-label="" aria-describedby="basic-addon2">
@@ -275,95 +275,108 @@
             
                 <!-- details-section starts from here -->
                 <div class="details">
-                    <nav class="m-3">
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Details</button>
-                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Shipping</button>
-                        </div>
-                    </nav>
-                    <div class="tab-content m-3" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" onclick="accordion(this)">
-                                            KEY FEATURES
-                                            <div class="extra btn position-absolute end-0" >
-                                                <i class="material-icons text-success add">add_circle</i> 
-                                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                                        </div>
-                                            </button>
-                                        </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body text-secondary">VitC delivers 1000mg of pure Vitamin C per capsule, enhanced with bioflavonoids for optimal absorption. Our vegan-friendly formula supports immune health, promotes collagen production, and protects against free radicals, ensuring you look and feel your best.</div>
-                                </div>
-                                </div>
-                                <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" onclick="accordion(this)">
-                                            INGREDIENTS
-                                            <div class="extra btn position-absolute end-0" >
-                                                <i class="material-icons text-success add">add_circle</i> 
-                                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                                            </div>
-                                            </button>
-                                        </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body text-secondary">Each VitC capsule contains Vitamin C (1000mg), Citrus Bioflavonoids, Rosehip Extract, and natural cellulose (capsule). Our formula is free from artificial additives, gluten, and preservatives, ensuring a pure and effective vitamin supplement for your health.
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingThree">
-                                            <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" onclick="accordion(this)">
-                                                HOW TO USE
-                                                <div class="extra btn position-absolute end-0" >
-                                                    <i class="material-icons text-success add">add_circle</i> 
-                                                    <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                                            </div>
-                                            </button>
-                                        </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body text-secondary">For optimal results, take one capsule daily with water, preferably with a meal. Consistency is key; incorporate into your daily routine for enhanced immune support and overall wellness.</div>
-                                </div>
-                                </div>
-                                <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingfour">
-                                            <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" onclick="accordion(this)">
-                                            QUALITY
-                                            <div class="extra btn position-absolute end-0" >
-                                                <i class="material-icons text-success add">add_circle</i> 
-                                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                                        </div>
-                                            </button>
-                                        </h2>
-                                    <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body text-secondary">Our Vitamin C is sourced from premium ingredients and undergoes rigorous testing to ensure purity and potency. Each batch meets the highest quality standards, delivering effective support for your immune system and overall health.</div>
-                                    </div>
-                                </div>
+                  <!-- details-section starts from here -->
+                <nav class="m-3">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Details</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Shipping</button>
+                    </div>
+                </nav>
+                <div class="tab-content m-3" id="nav-tabContent">
+                    <!-- First Tab Content -->
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne" onclick="accordion(this)">
+                            KEY FEATURES
+                            <div class="btn position-absolute end-0">
+                                <i class="material-icons text-success add">add_circle</i>
+                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>
+                            </div>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body text-secondary">
+                            VitC delivers 1000mg of pure Vitamin C per capsule, enhanced with bioflavonoids for optimal absorption. Our vegan-friendly formula supports immune health, promotes collagen production, and protects against free radicals, ensuring you look and feel your best.
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" onclick="accordion(this)">
-                                                Shipping Information
-                                                <div class="extra btn position-absolute end-0" >
-                                                    <i class="material-icons text-success add">add_circle</i> 
-                                                    <i class="material-icons text-success remove" style="display:none">remove_circle</i>      
-                                            </div>
-                                            </button>
-                                        </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body text-secondary">At VitC, we prioritize your convenience by providing efficient shipping options. Orders are typically dispatched within 1-3 business days. Enjoy peace of mind with our tracking service, allowing you to monitor your shipment every step of the way. We strive to offer competitive shipping rates and free shipping for orders above a specified threshold, ensuring that your health journey is as seamless as possible.</div>
-                                </div>
-                                </div>
-                        </div>   
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" onclick="accordion(this)">
+                            INGREDIENTS
+                            <div class="btn position-absolute end-0">
+                                <i class="material-icons text-success add">add_circle</i>
+                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>
+                            </div>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body text-secondary">
+                            Each VitC capsule contains Vitamin C (1000mg), Citrus Bioflavonoids, Rosehip Extract, and natural cellulose (capsule). Our formula is free from artificial additives, gluten, and preservatives, ensuring a pure and effective vitamin supplement for your health.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" onclick="accordion(this)">
+                            HOW TO USE
+                            <div class="btn position-absolute end-0">
+                                <i class="material-icons text-success add">add_circle</i>
+                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>
+                            </div>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body text-secondary">
+                            For optimal results, take one capsule daily with water, preferably with a meal. Consistency is key; incorporate into your daily routine for enhanced immune support and overall wellness.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour" onclick="accordion(this)">
+                            QUALITY
+                            <div class="btn position-absolute end-0">
+                                <i class="material-icons text-success add">add_circle</i>
+                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>
+                            </div>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body text-secondary">
+                            Our Vitamin C is sourced from premium ingredients and undergoes rigorous testing to ensure purity and potency. Each batch meets the highest quality standards, delivering effective support for your immune system and overall health.
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                  </div>  
-
-                </div> 
+                    </div>
+                
+                    <!-- Second Tab Content -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="accordion" id="accordionPanelsStayOpenExample2">
+                        <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen2-headingOne">
+                            <button class="accordion-button collapsed fw-bold position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen2-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen2-collapseOne" onclick="accordion(this)">
+                            Shipping Information
+                            <div class="btn position-absolute end-0">
+                                <i class="material-icons text-success add">add_circle</i>
+                                <i class="material-icons text-success remove" style="display:none">remove_circle</i>
+                            </div>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen2-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen2-headingOne">
+                            <div class="accordion-body text-secondary">
+                            At VitC, we prioritize your convenience by providing efficient shipping options. Orders are typically dispatched within 1-3 business days. Enjoy peace of mind with our tracking service, allowing you to monitor your shipment every step of the way. We strive to offer competitive shipping rates and free shipping for orders above a specified threshold, ensuring that your health journey is as seamless as possible.
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- details-section ends here -->
+  
                 <!-- details-section ends here -->
             </div>
             <!-- cart-information ends here -->
@@ -668,7 +681,7 @@
             <div class="form-setion d-flex justify-content-center">
                 <div class="input-group mb-3 w-auto">
                         <input type="text" class="form-control rounded-pill-left" placeholder="Enter your email address" >
-                        <span role="button" class="input-group-text rounded-pill-right" id="basic-addon2">
+                        <span role="button" class="input-group-text rounded-pill-right email-icon" id="basic-addon2">
                             <i class="material-icons text-white rounded-pill p-2 bg-success">call_made</i>
                         </span>        
                 </div>

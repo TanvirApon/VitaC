@@ -52,12 +52,10 @@ function readMore() {
 function selectFlavour(element){
   var allFlavours = document.querySelectorAll(".flavour");
   for (var i = 0; i < allFlavours.length; i++) {
-    allFlavours[i].style.border = "none"; 
+    allFlavours[i].style.border = "1px solid transparent"; 
     allFlavours[i].style.background = "none"; 
-    element.style.borderRadius = "0px";
   }
-   element.style.border = "1px solid green ";
-   element.style.backgroundColor = "red";
+   element.style.border = "1px solid green";
    element.style.borderRadius = "10px";
 
    var image = element.querySelector("img");
@@ -70,7 +68,7 @@ function selectFlavour(element){
 function selectImage(element){
   var cards = document.querySelectorAll(".selected");
   for (var i = 0; i < cards.length; i++) {
-    cards[i].style.border = "none"; 
+    cards[i].style.border = "1px solid transparent"; 
     cards[i].style.background = "none"; 
   }
   element.style.border = "1px solid green";
@@ -102,7 +100,8 @@ function toggleDropdown() {
   if (downArrow.style.display !== 'none') {
     downArrow.style.display = 'none';
     upArrow.style.display = 'inline';
-  } else {
+  } 
+  else {
     upArrow.style.display = 'none';
     downArrow.style.display = 'inline';
   }
