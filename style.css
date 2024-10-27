@@ -315,14 +315,14 @@ a{
     .question-section .accordion .accordion-collapse .accordion-body{
         font-size: 14px;
         color: #888c89; 
-        margin: 15px;
+        margin: 30px;
     }
     /* question-section ends here */
     /* stayconnected-section starts from here */
     .stayconnected-section{
         text-align: center;
         color: white;
-        margin-bottom: 15px;
+        margin: 20px;
     }
     .stayconnected-section .background{
         background-color:  #2B6A4A;
