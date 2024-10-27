@@ -261,7 +261,16 @@ a{
         display: none;
     }
     .header{
-        font-size: 30px;
+        font-size: 24px;
+    }
+    .reviews {
+        font-size: 17px;
+        line-height: 2.5;
+    }
+    .price {
+        color: #41a935;
+        font-size: 25px;
+        font-weight: bold;
     }
     .info,.cart-information{
         padding:20px;
@@ -288,7 +297,7 @@ a{
         margin-bottom: 50px; 
     }
     .question-section .accordion .accordion-header .accordion-button{
-        font-size: 12px;
+        font-size: 15px;
         font-weight: bold;
     }
     .question-section .accordion .accordion-collapse .accordion-body{
@@ -321,8 +330,11 @@ a{
         font-size: 30px;
     }
     .stayconnected-section .background .paragraph{
-        font-size: 11px;
-        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 27px;
+        margin-bottom: 25px;
     }
     .stayconnected-section .background .orange-section {
         position:absolute;
