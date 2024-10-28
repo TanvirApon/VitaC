@@ -159,7 +159,7 @@ a{
 /* accordion border none */
 .accordion .accordion-item, 
 .accordion .accordion-header, 
-.accordion .accordion-body {
+.accordion .accordion-body , .accordion-button{
     border: none;
     outline: none;
 }
@@ -171,9 +171,12 @@ a{
     background-color: transparent !important; 
     box-shadow: none; 
 }
-.accordion  .accordion-item {
+.accordion .accordion-item {
     border-bottom: 1px solid #dee2e6;
     outline: none;
+}
+.accordion .accordion-item.no-border {
+    border-bottom: none; 
 }
 .extra {
     background: none; 
