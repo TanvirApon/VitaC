@@ -1,385 +1,384 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Roboto';
-    src: url('font/Roboto-Black.ttf');
-}            
-body {  
-    margin: 0;
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  src: url("font/Roboto-Black.ttf");
+}
+body {
+  margin: 0;
 }
 .search-form::placeholder {
-    text-align: center; 
+  text-align: center;
 }
-#decrease:hover,#increase:hover{
-    background-color: transparent;
-    outline: none;
+#decrease:hover,
+#increase:hover {
+  background-color: transparent;
+  outline: none;
 }
 .flavour {
-    box-sizing: border-box;        
-    border: 1px solid transparent; 
-    border-radius: 10px;    
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 10px;
 }
-#default{
-    border: 1px solid green;
-    border-radius: 10px;
+#default {
+  border: 1px solid green;
+  border-radius: 10px;
 }
-.form-select{
-    background-image:none;
+.form-select {
+  background-image: none;
 }
-#button-icon{
-    position:absolute;
-    top:6px;
-    right:15px;
-    width: 25px;
+#button-icon {
+  position: absolute;
+  top: 6px;
+  right: 15px;
+  width: 25px;
 }
 .flavour-section {
-    margin: 0 auto;
-    max-width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 }
-.accordion-button::after, .accordion-button:not(.collapsed)::after{
-    /* background-image: url('Images/Icon/add_circle.png'); */
-    display: none;
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  display: none;
 }
-.accordion-button:not(.collapsed){
-    background-color: white;
-    border:none;
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  border: none;
 }
-.accordion-button:focus{
-    box-shadow:none;
+.accordion-button:focus {
+  box-shadow: none;
 }
-.heading{
-    font-size: 20px;
-    font-weight: bold;
+.heading {
+  font-size: 20px;
+  font-weight: bold;
 }
-.cart-leaf{
-    background-image: url('Images/Shape.png');
-    background-repeat: no-repeat;
-    background-position: left 575px; 
+.cart-leaf {
+  background-image: url("Images/Shape.png");
+  background-repeat: no-repeat;
+  background-position: left 575px;
 }
-.cart-button{
-    background-color:  #1A432E;
+.cart-button {
+  background-color: #1a432e;
 }
-.cart-button:hover{
-    background-color:  #1A432E;
+.cart-button:hover {
+  background-color: #1a432e;
 }
-.flavour{
-    border-radius: 10px;
+.flavour {
+  border-radius: 10px;
 }
-.selected{
-    border-radius: 10px;
+.selected {
+  border-radius: 10px;
 }
-.input:focus  {
-    outline: none;
-    border: none;
+.input:focus {
+  outline: none;
+  border: none;
 }
-/* #wishlist_icon{
-    color:white;
-} */
-.red-color{
-    color:red;
+.red-color {
+  color: red;
 }
-.form-select:focus, .form-select:active {
-    outline: none;
-    box-shadow: none;
-    border: #888c89;
+.form-select:focus,
+.form-select:active {
+  outline: none;
+  box-shadow: none;
+  border: #888c89;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #2B6A4A;
-    border-radius: 50%; 
-    background-size: 20px;
+  background-color: #2b6a4a;
+  border-radius: 50%;
+  background-size: 20px;
 }
-.header{
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.header {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-a{
-    text-decoration: none;
-    color: #888c89;
-    font-size: 18px;
+a {
+  text-decoration: none;
+  color: #888c89;
+  font-size: 18px;
 }
-.price{
-    color:#41a935;
-    font-size: 30px;
-    font-weight: bold;
+.price {
+  color: #41a935;
+  font-size: 30px;
+  font-weight: bold;
 }
-.info{
-    font-size: 17px;
+.info {
+  font-size: 17px;
 }
 .read {
-    text-decoration: underline;
-    color:#2B6A4A;
+  text-decoration: underline;
+  color: #2b6a4a;
 }
-#more{
-    display: none;
+#more {
+  display: none;
 }
-.reviews{
-    font-size: 25px;
+.reviews {
+  font-size: 25px;
 }
-.footer{
-    background-image: url('Images/footer.jpeg');
-    background-size: 100% 100%;
-    margin-top: -170px;
+.footer {
+  background-image: url("Images/footer.jpeg");
+  background-size: 100% 100%;
+  margin-top: -170px;
 }
-.footer-inside{
-    padding: 10px;
+.footer-inside {
+  padding: 10px;
 }
-.footer-inside .row{
-    margin-top: 150px;
+.footer-inside .row {
+  margin-top: 150px;
 }
-.main-image{
-    background-color: #f7e9db;
-    border-radius: 25px;
+.main-image {
+  background-color: #f7e9db;
+  border-radius: 25px;
 }
-.question-leaf{
-    background-image: url('Images/leaf.png');
-    background-repeat: no-repeat;
-    background-position: top right;
+.question-leaf {
+  background-image: url("Images/leaf.png");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 /* Rounded pill classes for horizontal sides */
 .rounded-pill-left {
-    border-top-left-radius: 50rem !important;
-    border-bottom-left-radius: 50rem !important;
-  }
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important;
+}
 .rounded-pill-right {
-    border-top-right-radius: 50rem !important;
-    border-bottom-right-radius: 50rem !important;
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important;
 }
 .form-control:focus {
-    outline: none;
-    box-shadow: none; 
+  outline: none;
+  box-shadow: none;
 }
 .form-control {
-    border-right: none; 
+  border-right: none;
 }
-.search_bar{
-    border-left: none;
+.search_bar {
+  border-left: none;
 }
 /* accordion border none */
-.accordion .accordion-item, 
-.accordion .accordion-header, 
-.accordion .accordion-body , .accordion-button{
-    border: none;
-    outline: none;
+.accordion .accordion-item,
+.accordion .accordion-header,
+.accordion .accordion-body,
+.accordion-button {
+  border: none;
+  outline: none;
 }
-
-.accordion-button:focus, 
+.accordion-button:focus,
 .accordion-button:active {
-    background-color: transparent !important; 
-    box-shadow: none; 
+  background-color: transparent !important;
+  box-shadow: none;
 }
 .accordion .accordion-item {
-    border-bottom: 1px solid #dee2e6;
-    outline: none;
+  border-bottom: 1px solid #dee2e6;
+  outline: none;
 }
 .accordion .accordion-item.no-border {
-    border-bottom: none; 
+  border-bottom: none;
 }
 .accordion-header {
-    padding: 0; 
+  padding: 0;
 }
 .extra {
-    background: none; 
-    border: none; 
+  background: none;
+  border: none;
 }
 .extra:focus {
-    outline: none; 
+  outline: none;
 }
-.search-bar,.email-icon{
-    background-color: white;
+.search-bar,
+.email-icon {
+  background-color: white;
 }
 .search_bar:focus {
-    box-shadow: none !important;
-    outline: none !important;
-    border-color: #ced4da;
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #ced4da;
 }
-.email:focus{
-    box-shadow: none !important;
-    outline: none !important;
-    border-color: white;
+.email:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: white;
 }
-
-/* for desktop device */
-@media (min-width: 1024px) {
-/* cart-section starts from here */
-.selected img{
-    padding: 5px;
-}
- .flavour img{
-    padding:5px;
- }
-/* cart-section ends her */
-
-/* details-section starts here */
-.details .accordion .accordion-header .accordion-button{
-    padding-left: 0px;
-}
-.details .accordion-body {
-    padding-left: 0 !important;
-}
-/* details-section ends here */
-/* images-card starts here */
-.image-background{
-    background-color: #E8EDEA;
-}
-/* images-card ends here */
-.shape-section{
-    position: absolute;
-    top: 110%;
-    left: 0%;
-}
-/* question-section starts here */
-.question-section{
-    width: 650px;
-}
-.question-section .accordion .accordion-header .accordion-button{
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 0px;
-}
-.question-section .accordion .accordion-collapse .accordion-body{
-    font-size: 18px;
-    color: #888c89; 
-}
-/* question-section ends here */
-/* stayconnected-section starts from here */
-.stayconnected-section{
-    text-align: center;
-    color: white;
-    margin-bottom: 15px;
-}
-.stayconnected-section .background{
-    background-color:  #2B6A4A;
-    border-radius: 20px; 
+.stayconnected-section .background {
+    background-color: #2b6a4a;
+    border-radius: 20px;
     padding: 25px;
     text-align: center;
     position: relative;
 }
-.stayconnected-section .background .leaf-section {
-    position:absolute;
+/* for desktop device */
+@media (min-width: 1024px) {
+  /* cart-section starts from here */
+  .selected img {
+    padding: 5px;
+  }
+  .flavour img {
+    padding: 5px;
+  }
+  /* cart-section ends her */
+  /* details-section starts here */
+  .details .accordion .accordion-header .accordion-button {
+    padding-left: 0px;
+  }
+  .details .accordion-body {
+    padding-left: 0 !important;
+  }
+  /* details-section ends here */
+  /* images-card starts here */
+  .image-background {
+    background-color: #e8edea;
+  }
+  /* images-card ends here */
+  .shape-section {
+    position: absolute;
+    top: 110%;
+    left: 0%;
+  }
+  /* question-section starts here */
+  .question-section {
+    width: 650px;
+  }
+  .question-section .accordion .accordion-header .accordion-button {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .question-section .accordion .accordion-collapse .accordion-body {
+    font-size: 18px;
+    color: #888c89;
+  }
+  /* question-section ends here */
+  /* stayconnected-section starts from here */
+  .stayconnected-section {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+  }
+  .stayconnected-section .background .leaf-section {
+    position: absolute;
     top: 0%;
-    right:0%
-}
-.stayconnected-section .background .leaf-section img{
-    height: 200px; 
-}
-.stayconnected-section .background .heading{
+    right: 0%;
+  }
+  .stayconnected-section .background .leaf-section img {
+    height: 200px;
+  }
+  .stayconnected-section .background .heading {
     font-size: 55px;
-}
-.stayconnected-section .background .paragraph{
+  }
+  .stayconnected-section .background .paragraph {
     font-size: 18px;
     margin-bottom: 10px;
-}
-.stayconnected-section .background .orange-section {
-    position:absolute;
+  }
+  .stayconnected-section .background .orange-section {
+    position: absolute;
     bottom: 0%;
-    left:0%
-}
-.stayconnected-section .background .orange-section img{
+    left: 0%;
+  }
+  .stayconnected-section .background .orange-section img {
     opacity: 0.2;
-    height: 200px; 
-}
-/* stayconnected-section ends here */
+    height: 200px;
+  }
+  /* stayconnected-section ends here */
 }
 /* for mobile device */
 @media (max-width: 768px) {
-    .search_bar{
-        width: 100%;
-    }
-    .login,.cart{
-        display: none;
-    }
-    .header{
-        font-size: 24px;
-    }
-    .reviews {
-        font-size: 17px;
-        line-height: 2.5;
-    }
-    .price {
-        color: #41a935;
-        font-size: 25px;
-        font-weight: bold;
-        padding:5px;
-    }
-    .info,.cart-information{
-        padding:3px;
-    }
-    .image img {
-        width: 100%; 
-    }
-    .email-input {
-        width: 100%;
-    }
-    .shape-section{
-       display: none;
-    }
-    .leaf-section{
-        display: none;
-    }
-    /* images-card starts here */
-    .image-background{
-     background-color: #E8EDEA;
-    }
-    /* images-card ends here */
-    /* * question-section starts here */ */
-    .question-section{
-        margin-bottom: 50px; 
-    }
-    .question-section .accordion .accordion-header .accordion-button{
-        font-size: 15px;
-        font-weight: bold;
-        padding-right: 45px;
-    }
-    .question-section .accordion .accordion-collapse .accordion-body{
-        font-size: 14px;
-        color: #888c89; 
-        margin: 15px;
-    }
-    /* question-section ends here */
-    /* stayconnected-section starts from here */
-    .stayconnected-section{
-        text-align: center;
-        color: white;
-        margin-bottom: 15px;
-    }
-    .stayconnected-section .background{
-        background-color:  #2B6A4A;
-        border-radius: 20px;  
-        padding: 25px;
-        text-align: center;
-        position: relative;
-    }
-    .stayconnected-section .background .leaf-section {
-        position:absolute;
-        top: 0%;
-        right:0%
-    }
-    .stayconnected-section .background .leaf-section img{
-        height: 100px; 
-    }
-    .stayconnected-section .background .heading{
-        font-size: 30px;
-    }
-    .stayconnected-section .background .paragraph{
-        font-size: 15px;
-    }
-    h1{
-        font-size: 27px;
-        margin-bottom: 25px;
-    }
-    .stayconnected-section .background .orange-section {
-        position:absolute;
-        bottom: 0%;
-        left:0%
-    }
-    .stayconnected-section .background .orange-section img{
-        opacity: 0.2;
-        height: 100px; 
-    }
-    /* stayconnected-section ends here */
-    .cart-leaf,.question-leaf {
-        background-image: none;
-    }
+  .search_bar {
+    width: 100%;
+  }
+  .login,
+  .cart {
+    display: none;
+  }
+  .header {
+    font-size: 24px;
+  }
+  .reviews {
+    font-size: 17px;
+    line-height: 2.5;
+  }
+  .price {
+    color: #41a935;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .info,
+  .cart-information {
+    padding: 3px;
+  }
+  .image img {
+    width: 100%;
+  }
+  .email-input {
+    width: 100%;
+  }
+  .shape-section {
+    display: none;
+  }
+  .leaf-section {
+    display: none;
+  }
+  /* images-card starts here */
+  .image-background {
+    background-color: #e8edea;
+  }
+  /* images-card ends here */
+  /* * question-section starts here */
+  */ .question-section {
+    margin-bottom: 50px;
+  }
+  .question-section .accordion .accordion-header .accordion-button {
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .question-section .accordion .accordion-collapse .accordion-body {
+    font-size: 14px;
+    color: #888c89;
+    margin: 15px;
+  }
+  /* question-section ends here */
+  /* stayconnected-section starts from here */
+  .stayconnected-section {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+  }
+  .stayconnected-section .background .leaf-section {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+  .stayconnected-section .background .leaf-section img {
+    height: 100px;
+  }
+  .stayconnected-section .background .heading {
+    font-size: 30px;
+  }
+  .stayconnected-section .background .paragraph {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .stayconnected-section .background .orange-section {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+  }
+  .stayconnected-section .background .orange-section img {
+    opacity: 0.2;
+    height: 100px;
+  }
+  /* stayconnected-section ends here */
+  .cart-leaf,
+  .question-leaf {
+    background-image: none;
+  }
+  .footer-inside {
+    padding: 20px;
+}
 }
