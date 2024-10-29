@@ -206,15 +206,7 @@ a {
   text-align: center;
   position: relative;
 }
-/* this section is for js function */
-.flavour {
-    border: 1px solid transparent; 
-    background: none; 
-}
-.flavour.selected {
-    border: 1px solid green;
-    border-radius: 10px;
-}
+
 /* for desktop device */
 @media (min-width: 1024px) {
   /* cart-section starts from here */
@@ -310,11 +302,6 @@ a {
     color: #41a935;
     font-size: 25px;
     font-weight: bold;
-    padding: 5px;
-  }
-  .info,
-  .cart-information {
-    padding: 3px;
   }
   .image img {
     width: 100%;
@@ -352,7 +339,6 @@ a {
   .stayconnected-section {
     text-align: center;
     color: white;
-    margin-bottom: 15px;
   }
   .stayconnected-section .background .leaf-section {
     position: absolute;
@@ -369,8 +355,8 @@ a {
     font-size: 15px;
   }
   h1 {
-    font-size: 25px;
-    margin-bottom: 25px;
+    font-size: 23px;
+    margin-bottom: 20px;
   }
   .stayconnected-section .background .orange-section {
     position: absolute;
