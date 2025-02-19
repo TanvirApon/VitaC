@@ -22,7 +22,7 @@ including clicking interactions, name changes, color updates, and option selecti
 ## 📥 Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/TanvirApon/VitC-SPA
+   git clone https://github.com/TanvirApon/VitaC
    
 ## Folder Structure:
 - index.html – The main HTML file.
